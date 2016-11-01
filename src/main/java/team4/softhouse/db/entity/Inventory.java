@@ -19,12 +19,17 @@ public class Inventory {
     @Length(min = 8, message = "must contain atleast 8 characters")
     private String category;
 
+    @JsonProperty
+    @NotEmpty
+    private String specifications;
+
     public Inventory() {}
 
-    public Inventory(Integer id, String name, String category) {
+    public Inventory(Integer id, String name, String category, String specifications) {
         this.id = id;
         this.name = name;
         this.category = category;
+        this.specifications = specifications;
     }
 
     public Integer getId() {
@@ -49,5 +54,13 @@ public class Inventory {
 
     public void setCategory(String category) {
         this.category =category;
+    }
+
+    public String getSpecifications() {
+        return specifications;
+    }
+
+    public void setSpecifications(String specifications) {
+        this.specifications = specifications;
     }
 }

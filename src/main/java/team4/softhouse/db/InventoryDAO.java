@@ -10,10 +10,10 @@ import java.util.List;
 @RegisterMapperFactory(BeanMapperFactory.class)
 
 public interface InventoryDAO {
-    @SqlUpdate("CREATE TABLE IF NOT EXISTS inventory(id int auto_increment primary key, name varchar(12), category varchar(255))")
+    @SqlUpdate("CREATE TABLE IF NOT EXISTS inventory(id int auto_increment primary key, name varchar(12), category varchar(255), specifications varchar(500))")
     void createTable();
 
-    @SqlUpdate("INSERT INTO `inventory` VALUES(:id, :name, :category)")
+    @SqlUpdate("INSERT INTO `inventory` VALUES(:id, :name, :category, :specifications)")
     @GetGeneratedKeys
     int create(@BindBean Inventory inventory);
 
