@@ -26,7 +26,7 @@ public interface InventoryDAO {
     @SqlQuery("SELECT * FROM `inventory` WHERE id = :id")
     Inventory findBy(@Bind("id") int id);
 
-    @SqlUpdate("DELETE FROM `inventory` WHERE id = :id")
+    //@SqlUpdate("DELETE FROM `inventory` WHERE id = :id")
     int deleteBy(@Bind("id") int id);
 
     @SqlUpdate("UPDATE `inventory` SET name = :name, category = :category WHERE id = :id")
