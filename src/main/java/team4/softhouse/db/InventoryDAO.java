@@ -20,13 +20,16 @@ public interface InventoryDAO {
     @SqlQuery("SELECT * FROM `inventory`")
     List<Inventory> list();
 
-    @SqlQuery("SELECT * FROM `inventory` WHERE category = :cat")
-    Inventory findByCat(@Bind("cat") String cat);
+    @SqlQuery("SELECT * FROM `inventory` WHERE category = :type")
+    List<Inventory> findByType(@Bind("type") String Type);
+
+    //@SqlQuery("SELECT * FROM `inventory` WHERE category = :cat")
+    //Inventory findByCat(@Bind("cat") String cat);
 
     @SqlQuery("SELECT * FROM `inventory` WHERE id = :id")
     Inventory findBy(@Bind("id") int id);
 
-    //@SqlUpdate("DELETE FROM `inventory` WHERE id = :id")
+    @SqlUpdate("DELETE FROM `inventory` WHERE id = :id")
     int deleteBy(@Bind("id") int id);
 
     @SqlUpdate("UPDATE `inventory` SET name = :name, category = :category WHERE id = :id")

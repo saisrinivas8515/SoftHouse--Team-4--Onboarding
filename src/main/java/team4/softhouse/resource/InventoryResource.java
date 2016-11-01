@@ -25,14 +25,14 @@ public class InventoryResource {
     }
 
     @GET
-    public List<Inventory> listNotes() {
+    public List<Inventory> listInventory() {
         return this.inventoryDAO.list();
     }
 
     @GET
-    @Path("/category/{cat}")
-    public Inventory getNote(@PathParam("cat") String cat) {
-        return this.inventoryDAO.findByCat(cat);
+    @Path("/category/{type}")
+    public List<Inventory> getInventory(@PathParam("type") String type) {
+        return this.inventoryDAO.findByType(type);
     }
 
     @GET
