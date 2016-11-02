@@ -1,16 +1,17 @@
 package team4.softhouse.resource;
 
-import static com.google.common.base.Preconditions.checkNotNull;
-
 import team4.softhouse.db.InventoryDAO;
 import team4.softhouse.db.entity.Inventory;
-//import team4.softhouse.process.NoteProcess;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+
+import static com.google.common.base.Preconditions.checkNotNull;
+
+//import team4.softhouse.process.NoteProcess;
 
 
 @Path("/inventory")
@@ -25,16 +26,30 @@ public class InventoryResource {
     }
 
     @GET
-    public List<Inventory> listInventory() {
-        return this.inventoryDAO.list();
-    }
+    public List<Inventory> listInventory(@QueryParam("type") String type) {
+        System.out.println(type);
+        if (type == null)
+        {
+            return this.inventoryDAO.list();
+        }
 
+
+        return this.inventoryDAO.findByType(type);
+    }
+/*
     @GET
     @Path("/category/{type}")
     public List<Inventory> getInventory(@PathParam("type") String type) {
-        return this.inventoryDAO.findByType(type);
+        return this.inventoryDAO.findByType(type);//
     }
 
+    @GET
+    @Path("/category/")
+    public List<Inventory> getInventoryx(@QueryParam("type") String type) {
+        System.out.println(type);
+        return this.inventoryDAO.findByType(type);
+    }
+*/
     @GET
     @Path("/{id}")
     public Inventory getNote(@PathParam("id") Integer id) {
