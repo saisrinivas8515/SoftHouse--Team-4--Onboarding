@@ -44,7 +44,7 @@ public class App extends Application<TestConfiguration> {
 
     @Override
     public void initialize(Bootstrap<TestConfiguration> configuration) {
-        configuration.addBundle(new ConfiguredAssetsBundle("/assets/", "/", "indexx.html"));
+        configuration.addBundle(new ConfiguredAssetsBundle("/assets/", "/", "index.html"));
     }
 
     public static void main(String[] args) throws Exception {
