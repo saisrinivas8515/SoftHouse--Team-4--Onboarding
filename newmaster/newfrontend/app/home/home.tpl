@@ -1,166 +1,61 @@
 <div class="container">
+    <navigation class="row"></navigation>
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <nav class="navbar navbar-inverse" style="margin-bottom: 0" >
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Softhouse</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li><a href="#/home">Home</a></li>
-                        <li><a href="#/info">Product</a></li>
-                        <li><a href="#/">Manage</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="carousel slide" id="carousel-288124">
+            <div class="carousel-slide" id="carousel">
                 <ol class="carousel-indicators">
-                    <li data-slide-to="0" data-target="#carousel-288124" class="active">
+                    <li data-slide-to="0" data-target="#carousel" class="item active">
                     </li>
-                    <li data-slide-to="1" data-target="#carousel-288124">
+                    <li data-slide-to="1" data-target="#carousel">
                     </li>
-                    <li data-slide-to="2" data-target="#carousel-288124">
+                    <li data-slide-to="2" data-target="#carousel">
                     </li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img alt="" src="Img/SkaneTrafiken_bg.jpg" />
-                        <div class="carousel-caption">
+                        <img alt="" src="app/Images/Photo1.jpg" />
+                        <!--<div class="carousel-caption">
                             <h4>
                                 Softhouse
                             </h4>
                             <p>
                                 Softhouse
                             </p>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="item">
-                        <img alt="" src="Img/Continonous_bg.jpg" />
-                        <div class="carousel-caption">
+                        <img alt="" src="app/Images/Photo2.jpg" />
+                        <!--<div class="carousel-caption">
                             <h4>
                                 Softhouse
                             </h4>
                             <p>
                                 Softhouse
                             </p>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="item">
-                        <img alt="" src="Img/default2.jpg" />
-                        <div class="carousel-caption">
+                        <img alt="" src="app/Images/Photo3.png" />
+                        <!--<div class="carousel-caption">
                             <h4>
                                 Softhouse
                             </h4>
                             <p>
                                 Softhouse
                             </p>
-                        </div>
+                        </div>-->
                     </div>
-                </div> <a class="left carousel-control" href="#carousel-288124" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-288124" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+                <a class="left carousel-control" href="#carousel" data-slide-to="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel" data-slide-to="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
             </div>
         </div>
     </div>
     <hr>
-    <div class="row clearfix">
-        <div class="col-md-12 column">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 1
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 2
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 3
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 4
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 5
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                        <a class="btn btn-primary" href="#"> <img alt="300x200" src="#" /></a>
-                        <div class="caption">
-                            <h3>
-                                Mobile 6
-                            </h3>
-                            <p>
-                                specific
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <ul class="pager">
-                        <li><a href="#">&laquo;</a></li>
-                        <li class="active"><a  href="#">1</a>  <span class="sr-only">(current)</span></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">&raquo;</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
     <hr width="100%">
     <div class="row clearfix">
         <div class="col-md-12 column">

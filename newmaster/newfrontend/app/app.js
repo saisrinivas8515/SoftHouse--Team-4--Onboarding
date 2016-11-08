@@ -1,5 +1,6 @@
 angular.module('app', ['ngRoute'])
     .factory('productService', productService)
+    .factory('loginService', loginService)
     .component('productForm', {
         templateUrl: 'app/product-form/product-form.tpl',
         controller: ProductFormController,
@@ -33,11 +34,16 @@ angular.module('app', ['ngRoute'])
         controller: ProductsController,
         controllerAs: 'vm'
     })
-    .component('navigation', { templateUrl: 'app/navigation/navigation.tpl' })
-    .component('home', { templateUrl: 'app/home/home.tpl' })
+    .component('navigation', { "templateUrl": 'app/navigation/navigation.tpl'})
     .component('info', {
         templateUrl: 'app/info/info.tpl',
         controller: InfoController,
+        controllerAs: 'vm'
+    })
+    .component('home', {"templateUrl": 'app/home/home.tpl'})
+    .component('login', {
+        templateUrl: 'app/login/login.tpl',
+        controller: LoginController,
         controllerAs: 'vm'
     })
     .config(appConfig);
