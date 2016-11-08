@@ -11,12 +11,12 @@ public class Inventory {
 
     @JsonProperty
     @NotEmpty
-    @Length(max = 12, message = "must not be longer than 12 characters")
+    @Length(max = 99, message = "must not be longer than 99 characters")
     private String name;
 
     @JsonProperty
     @NotEmpty
-    @Length(min = 8, message = "must contain atleast 8 characters")
+    @Length(min = 1, message = "must contain atleast 1 characters")
     private String category;
 
     @JsonProperty
