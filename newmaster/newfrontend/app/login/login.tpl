@@ -1,28 +1,34 @@
 <div class="container">
 <navigation class="row"></navigation>
 
-<div ng-show="error" class="alert alert-danger">{{error}}</div>
+    <div class="row">
+        <empty_space class="col-xs-4"></empty_space>
 
-<form name="form" ng-submit="login()" role="form">
+<!--<div ng-show="error" class="alert alert-danger">{{error}}</div>-->
 
-    <div class="form-group">
-        <label for="username">Username</label>
-        <i class="fa fa-key"></i>
-        <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" required />
-        <div class="row" ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</div>
+<form name="vm.loginbox" ng-submit="vm.onSubmit(vm.username, vm.password)" class="panel panel-default">
+
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <!--<i class="fa fa-key"></i>-->
+            <input type="text" name="username" id="username" class="form-control" ng-model="vm.username" placeholder="Username" autocomplete="off" required />
+            <!--<div class="row" ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username is required</div>-->
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <!--<i class="fa fa-lock"></i>-->
+            <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
+            <!--<div class="row" ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</div>-->
+        </div>
     </div>
 
-    <div class="form-group">
-        <label for="password">Password</label>
-        <i class="fa fa-lock"></i>
-        <input type="password" name="password" id="password" class="form-control" ng-model="vm.password" required />
-        <div class="row" ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</div>
-    </div>
-
-    <div class="form-actions">
-        <button type="submit" ng-disabled="form.$invalid || dataLoading" class="btn btn-danger">Login</button>
-        <!--<img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA=="/>-->
-    </div>
+    <div class="panel-footer text-right">
+        <button type="submit" class="btn btn-xs btn-danger">Login</button>
+       </div>
 
 </form>
+        <empty_space1 class="col-xs-4"></empty_space1>
+        </div>
     </div>

@@ -12,20 +12,31 @@ function LoginController (loginService, $log) {
         vm.password = parentControllerHasSetData ? vm.data.password : '';
     }
 
-    function onUserDidsubmit(username, password) {
+    function onUserDidSubmit(username, password) {
 
-        var test = function (response) {
-
-            if (response.success) {
-                loginService.SetCredentials($scope.username, $scope.password);
+            if (response.status == 200) {
+                loginService.SetCredentials(username, password);
                 $log.path('/home');
             } else {
 
                 vm.showError();
                 vm.onReset();
 
-
             }
-        }
+    }
+
+    function onUserDidReset(){
+        vm.username='';
+        vm.password='';
+        //vm.$setPristine();
+        //vm.$setUntouched();
+    }
+
+    function showSuccess() {
+        alert("Success");
+    }
+
+    function showError() {
+        alert("fail");
     }
 }
