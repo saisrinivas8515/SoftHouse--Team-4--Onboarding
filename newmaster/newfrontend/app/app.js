@@ -1,6 +1,7 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'ngCookies'])
     .factory('productService', productService)
     .factory('loginService', loginService)
+    .factory('loginInterceptor', loginInterceptor)
     .component('productForm', {
         templateUrl: 'app/product-form/product-form.tpl',
         controller: ProductFormController,
@@ -44,6 +45,22 @@ angular.module('app', ['ngRoute'])
     .component('login', {
         templateUrl: 'app/login/login.tpl',
         controller: LoginController,
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+
+        bindings: {
+            data: '<',
+            onSubmit: '<'
+        }
     })
-    .config(appConfig);
+    .config(appConfig)
+    .run(run);
+
+function run($http, $cookies){
+
+    var authdata = $cookies.get('authdata') || null;
+
+    if (authdata!= null){
+
+        $http.defaults.headers.common['Authorization'] = 'Basic' + authdata;
+    }
+}

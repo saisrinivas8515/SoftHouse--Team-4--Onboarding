@@ -4,9 +4,9 @@
       <a class="navbar-brand" >Softhouse</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#/home">Home</a></li>
-      <li><a href="#/info">Products</a></li>
-      <li><a href="#/">Manage</a></li>
+      <li><a href="#/">Home</a></li>
+      <li><a href="#/products">Products</a></li>
+      <li><a href="#/info">Manage</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
        <li><a href="#/login"> Login</a></li>

@@ -1,5 +1,5 @@
 function loginService($http, $interpolate, $cookies) {
-    var logindata = $interpolate('/app/login')
+    var login = $interpolate('/api/login')
 
     return {
 
@@ -8,6 +8,7 @@ function loginService($http, $interpolate, $cookies) {
         SetCredentials: SetCredentials
 
     };
+
     function verify(username, password) {
         var data ={
 
@@ -15,7 +16,7 @@ function loginService($http, $interpolate, $cookies) {
             password: password
         };
 
-        return $http.post(logindata(), data)
+        return $http.post(login(), data)
 
     }
     function ClearCredentials() {
@@ -23,9 +24,13 @@ function loginService($http, $interpolate, $cookies) {
         $cookies.remove('authdata');
 
     }
-    function SetCredentials() {
-        var logindata = Base64.encode(username + ':' + password);
-        $http.defaults.headers.common['Authorization'] = 'Basic' + authdata;
+    function SetCredentials(username, password) {
+
+        console.log($http.defaults.headers.common.Autorization);
+        var authdata = Base64.encode(username + ':' + password);
+        $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
+        console.log($http.defaults.headers.common.Autorization);
+
         $cookies.put('authdata', authdata);
     }
 }
