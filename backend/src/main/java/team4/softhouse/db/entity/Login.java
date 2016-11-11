@@ -25,15 +25,15 @@ public class Login implements Principal {
 
     public Login(){}
 
-    public Login(String name, String password){
-        this.username=name;
+    public Login(String username, String password){
+        this.username=username;
         this.password=password;
     }
 
-    public Login(Integer id, String name, String password){
+    public Login(Integer id, String username, String password){
 
         this.id=id;
-        this.username=name;
+        this.username=username;
         this.password=password;
     }
 

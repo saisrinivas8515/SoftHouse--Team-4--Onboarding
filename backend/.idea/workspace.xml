@@ -47,7 +47,7 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
+            <state relative-caret-position="419">
               <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
               <folding />
             </state>
@@ -57,8 +57,18 @@
       <file leaf-file-name="LoginDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/LoginDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
+            <state relative-caret-position="102">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -74,77 +84,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="LoginProcess.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/LoginProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="InventoryResource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/InventoryResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="289">
               <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#1691#1692#0" expanded="false" />
-                <element signature="e#1753#1754#0" expanded="false" />
-                <element signature="e#2064#2065#0" expanded="false" />
-                <element signature="e#2112#2113#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginResource.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/LoginResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Inventory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Inventory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#870#871#0" expanded="false" />
-                <element signature="e#895#896#0" expanded="false" />
-                <element signature="e#932#933#0" expanded="false" />
-                <element signature="e#960#961#0" expanded="false" />
-                <element signature="e#991#992#0" expanded="false" />
-                <element signature="e#1018#1019#0" expanded="false" />
-                <element signature="e#1058#1059#0" expanded="false" />
-                <element signature="e#1090#1091#0" expanded="false" />
-                <element signature="e#1125#1126#0" expanded="false" />
-                <element signature="e#1156#1157#0" expanded="false" />
-                <element signature="e#1204#1205#0" expanded="false" />
-                <element signature="e#1243#1244#0" expanded="false" />
-                <element signature="e#1284#1285#0" expanded="false" />
-                <element signature="e#1321#1322#0" expanded="false" />
-                <element signature="e#1381#1382#0" expanded="false" />
-                <element signature="e#1433#1434#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InventoryDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/InventoryDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,12 +118,38 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Login.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Login.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="597">
+              <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+                <element signature="e#1407#1408#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LoginAuthorizer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/auth/LoginAuthorizer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginResource.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/LoginResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -546,9 +529,9 @@
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/auth/LoginAuthenticator.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/auth/LoginAuthorizer.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/db/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/resource/InventoryResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Orders.java" />
+        <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/db/LoginDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/team4/softhouse/resource/LoginResource.java" />
       </list>
@@ -1155,7 +1138,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2576792" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17918089" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35153583" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1258,10 +1241,7 @@
         <state relative-caret-position="408">
           <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
           <folding>
-            <element signature="e#1691#1692#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#2064#2065#0" expanded="false" />
-            <element signature="e#2112#2113#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1328,13 +1308,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/NoteProcessDbImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/NoteProcess.java" />
-    <entry file="file://$PROJECT_DIR$/config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/InventoryProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1355,14 +1328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/LoginProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/auth/Authorizer.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/TestConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1376,27 +1341,6 @@
         <state relative-caret-position="306">
           <caret line="18" column="77" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/InventoryResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#1691#1692#0" expanded="false" />
-            <element signature="e#1753#1754#0" expanded="false" />
-            <element signature="e#2064#2065#0" expanded="false" />
-            <element signature="e#2112#2113#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1428,10 +1372,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/auth/LoginAuthorizer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/InventoryDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        <state relative-caret-position="374">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/InventoryResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="71" column="53" selection-start-line="71" selection-start-column="53" selection-end-line="71" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1446,20 +1416,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/auth/LoginAuthorizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/InventoryDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/LoginDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/process/LoginProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1472,19 +1448,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/LoginDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/db/entity/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="597">
+          <caret line="72" column="8" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="e#1407#1408#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/team4/softhouse/resource/LoginResource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="223">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
