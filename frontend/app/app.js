@@ -1,12 +1,12 @@
 angular.module('app', ['ngRoute'])
-    .factory('noteService', noteService)
-    .component('noteForm', {
-        templateUrl: 'app/note-form/note-form.tpl',
-        controller: NoteFormController,
+    .factory('productService', productService)
+    .component('productForm', {
+        templateUrl: 'app/product-form/product-form.tpl',
+        controller: ProductFormController,
         controllerAs: 'vm',
 
         require: {
-            notesController: '^notes'
+            productsController: '^products'
         },
 
         bindings: {
@@ -15,24 +15,30 @@ angular.module('app', ['ngRoute'])
             onReset: '<'
         }
     })
-    .component('note', {
-        templateUrl: 'app/note/note.tpl',
-        controller: NoteController,
+    .component('product', {
+        templateUrl: 'app/product/product.tpl',
+        controller: ProductController,
         controllerAs: 'vm',
 
         require: {
-            notesController: '^notes'
+            productsController: '^products'
         },
 
         bindings: {
             data: '<'
         }
     })
-    .component('notes', {
-        templateUrl: 'app/notes/notes.tpl',
-        controller: NotesController,
+    .component('products', {
+        templateUrl: 'app/products/products.tpl',
+        controller: ProductsController,
         controllerAs: 'vm'
     })
     .component('navigation', { templateUrl: 'app/navigation/navigation.tpl' })
-    .component('info', { templateUrl: 'app/info/info.tpl' })
+    .component('home', { templateUrl: 'app/home/home.tpl' })
+    .component('login', { templateUrl: 'app/login/login.tpl' })
+    .component('info', {
+        templateUrl: 'app/info/info.tpl',
+        controller: InfoController,
+        controllerAs: 'vm'
+    })
     .config(appConfig);

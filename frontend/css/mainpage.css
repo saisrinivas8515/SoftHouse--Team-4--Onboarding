@@ -1,18 +1,19 @@
+/**
 hr {color:sienna;
     text-align: center}
 p {margin-left:20px;
     text-align: center}
 
-/*body {
+body {
     background-image: url("http://photocdn.sohu.com/20161024/Img471091413.jpeg");
     background-repeat: no-repeat; background-position: right top;
     margin-right:200px;
     height: 80%;
     width: 80%;
 
-}*/
+}
 a:link {
-    /*background-color:#B2FF99;*/
+    background-color:#B2FF99;
         text-decoration:none;
         }
 .dropdown {
@@ -32,13 +33,18 @@ a:link {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+*/
 .copyright {
     color: #9d9d9d;
-    text-align: match-parent;
+    text-align: center;
 }
 .subnav {
     font-size: 20px;
     text-align: center;
 
+}
+.img-p {
+    height: 30px;
+    margin-left: 0px;
+    text-align: left;
 }

@@ -1,10 +1,16 @@
-<div class="page-header">
-    <h4 class="pull-left">SoftHouse</h4>
-
-    <div class="btn-group pull-right">
-        <a ng-href="#/" class="btn btn-default">Notes Page</a>
-        <a ng-href="#/info" class="btn btn-default">Info Page</a>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" >Softhouse</a>
     </div>
-
-    <div class="clearfix"></div>
-</div>
+    <ul class="nav navbar-nav">
+      <li><a href="#/home">Home</a></li>
+      <!--<li><a href="/mainpage.html">Home</a></li>-->
+      <li><a href="#/info">Products</a></li>
+      <li><a href="#/products">Manage</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+       <li><a href="#/login"> Login</a></li>
+    </ul>
+  </div>
+</nav>
