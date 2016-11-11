@@ -28,9 +28,9 @@ public class LoginResource {
 */
     @POST
     public Login verifyLogin(Login login){
-        Login test = this.loginProcess.verify(login);
-        test.setUsername(null);
-        test.setPassword(null);
-        return test;
+        return this.loginProcess.verify(login);
     }
 }
+
+
+

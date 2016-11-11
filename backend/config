@@ -1,6 +1,6 @@
 assets:
   overrides:
-    /: ../newfrontend/
+    /: ../frontend/
 
 server:
   rootPath: '/api/*'
