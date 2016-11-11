@@ -1,6 +1,6 @@
 function loginInterceptor() {
 
-    console.log("test")
+
     return {
 
         request: function (config) {

@@ -1,6 +1,6 @@
 function appConfig($routeProvider, $httpProvider) {
     $routeProvider
-        .when('/products', {template: '<products></products>'})
+        .when('/products', {template: '<products></products>',resolve:{loggedIn:onlyLoggedIn}})
         .when('/info', {template: '<info></info>'})
         .when('/', {template: '<home></home>'})
         .when('/login', {template: '<login></login>'})

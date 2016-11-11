@@ -8,7 +8,8 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         controllerAs: 'vm',
 
         require: {
-            productsController: '^products'
+            productsController: '^products',
+            navigationController: '^?navigation'
         },
 
         bindings: {
@@ -23,7 +24,8 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         controllerAs: 'vm',
 
         require: {
-            productsController: '^products'
+            productsController: '^products',
+            navigationController: '^?navigation'
         },
 
         bindings: {
@@ -33,24 +35,51 @@ angular.module('app', ['ngRoute', 'ngCookies'])
     .component('products', {
         templateUrl: 'app/products/products.tpl',
         controller: ProductsController,
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+
+        require: {
+            navigationController: '^?navigation'
+
+        }
     })
-    .component('navigation', { "templateUrl": 'app/navigation/navigation.tpl'})
+
+    // .component('navigation1', { "templateUrl": 'app/navigation/navigation1.tpl'})
     .component('info', {
         templateUrl: 'app/info/info.tpl',
         controller: InfoController,
-        controllerAs: 'vm'
+        controllerAs: 'vm',
+
+        require: {
+            navigationController: '^?navigation'
+
+        }
     })
-    .component('home', {"templateUrl": 'app/home/home.tpl'})
+    .component('home', {templateUrl: 'app/home/home.tpl',
+
+        require: {
+            navigationController: '^?navigation'
+
+        }
+    })
     .component('login', {
         templateUrl: 'app/login/login.tpl',
         controller: LoginController,
         controllerAs: 'vm',
 
+        require: {
+            navigationController: '^?navigation'
+
+        },
         bindings: {
             data: '<',
             onSubmit: '<'
         }
+    })
+
+    .component('navigation', {
+        templateUrl: 'app/navigation/navigation.tpl',
+        controller: NavigationController,
+        controllerAs: 'vm'
     })
     .config(appConfig)
     .run(run);
