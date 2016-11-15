@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 
 import static jersey.repackaged.com.google.common.base.Preconditions.checkNotNull;
 
-@Path("/login")
+@Path("login")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 public class LoginResource {
@@ -31,6 +31,3 @@ public class LoginResource {
         return this.loginProcess.verify(login);
     }
 }
-
-
-
