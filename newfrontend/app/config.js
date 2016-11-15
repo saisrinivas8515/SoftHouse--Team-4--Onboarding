@@ -4,7 +4,6 @@ function appConfig($routeProvider, $httpProvider) {
         .when('/info', {template: '<info></info>'})
         .when('/', {template: '<home></home>'})
         .when('/login', {template: '<login></login>'})
-        .when('/order', {template: '<order></order>'})
         .otherwise({
             redirectTo: '/'
         });

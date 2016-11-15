@@ -1,7 +1,6 @@
 angular.module('app', ['ngRoute', 'ngCookies'])
     .factory('productService', productService)
     .factory('loginService', loginService)
-    .factory('orderService', orderService)
     .factory('loginInterceptor', loginInterceptor)
     .component('productForm', {
         templateUrl: 'app/product-form/product-form.tpl',
@@ -43,31 +42,6 @@ angular.module('app', ['ngRoute', 'ngCookies'])
 
         }
     })
-    .component('order', {
-        templateUrl: 'app/order/order.tpl',
-        controller: OrderController,
-        controllerAs: 'vm',
-
-        require: {
-            ordersController: '^orders',
-            navigationController: '^?navigation'
-        },
-
-        bindings: {
-            data: '<'
-        }
-    })
-    .component('orders', {
-        templateUrl: 'app/order/order.tpl',
-        controller: OrdersController,
-        controllerAs: 'vm',
-
-        require: {
-            navigationController: '^?navigation'
-
-        }
-    })
-
 
     // .component('navigation1', { "templateUrl": 'app/navigation/navigation1.tpl'})
     .component('info', {
