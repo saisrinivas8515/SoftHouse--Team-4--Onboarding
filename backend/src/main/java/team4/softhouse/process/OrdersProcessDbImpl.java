@@ -22,7 +22,7 @@ public class OrdersProcessDbImpl implements OrdersProcess {
                 .ofNullable(this.ordersDAO.get())
                 .orElseThrow(() -> new javax.ws.rs.NotFoundException("No orders available"));
 
-    }
+    }*/
 
     @Override
     public int create(Orders product) throws BadRequestException {
@@ -30,6 +30,6 @@ public class OrdersProcessDbImpl implements OrdersProcess {
                 .ofNullable( this.ordersDAO.create(product))
                 .orElseThrow(()-> new BadRequestException("You have ordered similar product more than Once"));
 
-    }*/
+    }
 
     }
