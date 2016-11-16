@@ -42,7 +42,7 @@ function productService($http, $interpolate,$cookies) {
         return $http.post(product(), data);
     }
 
-   /* function order(orderedproduct) {
+   function order(orderedproduct) {
 
        var userid= $cookies.get('userid');
        var username= $cookies.get('username');
@@ -61,7 +61,6 @@ function productService($http, $interpolate,$cookies) {
 
         return $http.post(order1(), data);
     }
-*/
 
 
     function destroy(id) {
