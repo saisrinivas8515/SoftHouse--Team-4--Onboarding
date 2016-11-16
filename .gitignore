@@ -1,6 +1,3 @@
-backend/.idea/*
-newmaster/backend/.idea/*
-newmaster/frontend/.idea/*
-frontend/.idea/*
+
 */inventorydb.mv.db
 */inventorydb.trace.db
