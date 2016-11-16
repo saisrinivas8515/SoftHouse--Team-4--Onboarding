@@ -29,11 +29,11 @@ public class OrdersResource {
     }
 
 
-    @GET
+   /* @GET
     public Orders get(@QueryParam("type") String type) throws javassist.NotFoundException {
         System.out.println(type);
         return this.ordersProcess.getorders();
-    }
+    }*/
 
 
    /* @GET
