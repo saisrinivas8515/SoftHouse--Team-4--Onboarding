@@ -2,6 +2,8 @@ package team4.softhouse.resource;
 
 
 import com.sun.istack.internal.NotNull;
+import javassist.*;
+import team4.softhouse.db.entity.Inventory;
 import team4.softhouse.db.entity.Orders;
 import team4.softhouse.process.OrdersProcess;
 
@@ -13,7 +15,7 @@ import java.util.List;
 
 import static jersey.repackaged.com.google.common.base.Preconditions.checkNotNull;
 
-@RolesAllowed("ADMIN")
+
 @Path("/orders")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -26,21 +28,24 @@ public class OrdersResource {
         this.ordersProcess = checkNotNull(ordersProcess);
     }
 
+
     @GET
-    public List<Orders> listOrders(@QueryParam("empid") String empid){
-    System.out.println(empid);
-        if (empid == null)
-        {
-            return this.ordersProcess.list();
-        }
-
-        return (List<Orders>) this.ordersProcess.findType(empid);
+    public Orders get(@QueryParam("type") String type) throws javassist.NotFoundException {
+        System.out.println(type);
+        return this.ordersProcess.getorders();
     }
 
-    @POST
-    public Orders createNote(@NotNull @Valid Orders orders){
-        return this.ordersProcess.create(orders);
-    }
+
+   /* @GET
+    @Path("/{id}")
+    public Orders get() throws javassist.NotFoundException {
+        return this.ordersProcess.getorders();
+    }*/
+
+   @POST
+   public int OrderedProduct(Orders product) {return this.ordersProcess.create(product);}
+
+
 
 }
 

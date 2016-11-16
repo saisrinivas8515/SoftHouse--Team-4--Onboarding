@@ -18,5 +18,9 @@
         <processorPath useClasspath="true" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="softhouse_main" target="1.8" />
+      <module name="softhouse_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

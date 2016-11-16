@@ -5,21 +5,25 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class Orders {
-
-    @JsonProperty
-    private Integer id;
-
     @JsonProperty
     @NotEmpty
-    private String emp_name;
-
-    @JsonProperty
-    @NotEmpty
-    private String emp_id;
+    private Integer orderid;
 
     @JsonProperty
     @NotEmpty
     private String name;
+
+    @JsonProperty
+    @NotEmpty
+    private Integer productid;
+
+    @JsonProperty
+    @NotEmpty
+    private Integer userid;
+
+    @JsonProperty
+    @NotEmpty
+    private String username;
 
     @JsonProperty
     @NotEmpty
@@ -31,37 +35,46 @@ public class Orders {
 
     public Orders (){}
 
-    public Orders(Integer id, String emp_name, String emp_id, String name, String category, String specifications){
-        this.id = id;
-        this.emp_name = emp_name;
-        this.emp_id = emp_id;
+    public Orders(Integer orderid, String name, Integer productid, Integer userid, String username, String category, String specifications) {
+        this.orderid = orderid;
+        this.username=username;
         this.name = name;
+        this.productid = productid;
+        this.userid = userid;
         this.category = category;
         this.specifications = specifications;
     }
 
-    public Integer getId() {
-        return id;
+    public String getUsername() {
+        return username;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getEmp_name() {
-        return emp_name;
+    public Integer getUserid() {
+        return userid;
     }
 
-    public void setEmp_name(String emp_name) {
-        this.emp_name = emp_name;
+    public void setUserid(Integer userid) {
+        this.userid = userid;
     }
 
-    public String getEmp_id() {
-        return emp_id;
+    public Integer getProductid() {
+        return productid;
     }
 
-    public void setEmp_id(String emp_id) {
-        this.emp_id = emp_id;
+    public void setProductid(Integer productid) {
+        this.productid = productid;
+    }
+
+    public Integer getOrderid() {
+        return orderid;
+    }
+
+    public void setOrderid(Integer orderid) {
+        this.orderid = orderid;
     }
 
     public String getName() {

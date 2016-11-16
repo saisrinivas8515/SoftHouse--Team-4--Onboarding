@@ -90,6 +90,6 @@ function run($http, $cookies){
 
     if (authdata!= null){
 
-        $http.defaults.headers.common['Authorization'] = 'Basic' + authdata;
+        $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
     }
 }

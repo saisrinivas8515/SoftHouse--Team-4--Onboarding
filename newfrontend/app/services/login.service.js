@@ -22,16 +22,22 @@ function loginService($http, $interpolate, $cookies) {
     function ClearCredentials() {
         $http.defaults.headers.common.Autorization = 'Basic';
         $cookies.remove('authdata');
+        $cookies.remove('userid');
+        $cookies.remove('username');
+
 
     }
-    function SetCredentials(username, password) {
-
-        console.log($http.defaults.headers.common.Autorization);
+    function SetCredentials(username, password, id) {
+        console.log(id);
+        //console.log($http.defaults.headers.common.Autorization);
         var authdata = Base64.encode(username + ':' + password);
         $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
-        console.log($http.defaults.headers.common.Autorization);
+        //console.log($http.defaults.headers.common.Autorization);
 
         $cookies.put('authdata', authdata);
+        $cookies.put('userid', id);
+        $cookies.put('username', username);
+
     }
 }
 

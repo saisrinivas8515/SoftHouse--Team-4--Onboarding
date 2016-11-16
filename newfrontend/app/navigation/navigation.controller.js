@@ -23,7 +23,7 @@ function NavigationController($cookies, loginService, $location) {
 
     function logout() {
 
-        console.log("test");
+        //console.log("test");
 
         loginService.ClearCredentials();
 

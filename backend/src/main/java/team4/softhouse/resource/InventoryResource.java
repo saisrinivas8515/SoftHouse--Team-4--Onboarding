@@ -14,7 +14,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 //import team4.softhouse.process.NoteProcess;
 
-@RolesAllowed("ADMIN")
+
 @Path("/product")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -36,20 +36,7 @@ public class InventoryResource {
 
         return this.inventoryProcess.findType(type);
     }
-/*
-    @GET
-    @Path("/category/{type}")
-    public List<Inventory> getInventory(@PathParam("type") String type) {
-        return this.inventoryDAO.findByType(type);//
-    }
 
-    @GET
-    @Path("/category/")
-    public List<Inventory> getInventoryx(@QueryParam("type") String type) {
-        System.out.println(type);
-        return this.inventoryDAO.findByType(type);
-    }
-*/
     @GET
     @Path("/{id}")
     public Inventory getNote(@PathParam("id") Integer id) throws javassist.NotFoundException {

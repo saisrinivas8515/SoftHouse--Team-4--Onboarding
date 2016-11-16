@@ -14,21 +14,24 @@
             <table class="table">
                 <thead>
                     <tr>
+
                         <th>Name</th>
                         <th>Specifications</th>
                         <th>Category</th>
+
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr ng-repeat="product in vm.products">
+
                         <td>{{product.name}}</td>
                         <td>{{product.specifications}}</td>
                         <td>{{product.category}}</td>
+                        <td> <button style="background-color:black" type="submit" ng-click="vm.onSubmit(product)" class="btn btn-xs btn-success">Add to cart</button> </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
 </div>

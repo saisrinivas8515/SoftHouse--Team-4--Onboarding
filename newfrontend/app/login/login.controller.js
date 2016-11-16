@@ -17,8 +17,7 @@ function LoginController (loginService, $location) {
         var test= function (response) {
 
             if (response.status == 200) {
-                loginService.SetCredentials(username, password);
-
+                loginService.SetCredentials(username, password, response.data.id);
                 $location.path('/home');
             } else {
 

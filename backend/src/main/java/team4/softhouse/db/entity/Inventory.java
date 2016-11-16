@@ -23,17 +23,13 @@ public class Inventory {
     @NotEmpty
     private String specifications;
 
-    @JsonProperty
-    private Integer quantity;
-
     public Inventory() {}
 
-    public Inventory(Integer id, String name, String category, String specifications, Integer quantity) {
+    public Inventory(Integer id, String name, String category, String specifications) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.specifications = specifications;
-        this.quantity = quantity;
     }
 
     public Integer getId() {
@@ -66,13 +62,5 @@ public class Inventory {
 
     public void setSpecifications(String specifications) {
         this.specifications = specifications;
-    }
-
-    public Integer getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(Integer quantity) {
-        this.quantity = quantity;
     }
 }
