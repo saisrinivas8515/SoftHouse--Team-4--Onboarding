@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/backend.iml" filepath="$PROJECT_DIR$/.idea/modules/backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/softhouse.iml" filepath="$PROJECT_DIR$/.idea/modules/softhouse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/softhouse_main.iml" filepath="$PROJECT_DIR$/.idea/modules/softhouse_main.iml" group="softhouse" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/softhouse_test.iml" filepath="$PROJECT_DIR$/.idea/modules/softhouse_test.iml" group="softhouse" />
     </modules>
   </component>
 </project>
