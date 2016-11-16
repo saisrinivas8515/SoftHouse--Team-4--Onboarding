@@ -6,6 +6,6 @@ import team4.softhouse.db.entity.Orders;
 
 public interface OrdersProcess {
 
-    //int create(Orders product);
+    int create(Orders product);
     //Orders getorders() throws NotFoundException;
 }
