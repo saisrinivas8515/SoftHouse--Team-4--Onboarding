@@ -16,6 +16,7 @@
 
 <form>
     <div class="row">
+        <h2 class="text-center">Orders Placed</h2>
         <div class="col-xs-12">
             <table class="table">
                 <thead>
@@ -37,6 +38,8 @@
                     <td>{{order.name}}</td>
                     <td>{{order.specifications}}</td>
                     <td>{{order.category}}</td>
+                    <td> <button style="background-color:black" type="submit"  class="btn btn-xs btn-success">Accept Order</button> </td>
+                    <td> <button style="background-color:black" type="submit"  class="btn btn-xs btn-success">Reject Order</button> </td>
                 </tr>
                 </tbody>
 
@@ -45,8 +48,10 @@
     </div>
 </form>
 
+
+    <h2 class="text-center">Products Added to Inventory</h2>
     <div class="row">
-        <product class="col-xs-12" ng-repeat="product in vm.products" data="product"></product>
+        <product class="col-xs-4" ng-repeat="product in vm.products" data="product"></product>
     </div>
 
 
