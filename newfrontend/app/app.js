@@ -2,6 +2,7 @@ angular.module('app', ['ngRoute', 'ngCookies'])
     .factory('productService', productService)
     .factory('loginService', loginService)
     .factory('loginInterceptor', loginInterceptor)
+    .factory('orderService', orderService)
     .component('productForm', {
         templateUrl: 'app/product-form/product-form.tpl',
         controller: ProductFormController,
@@ -81,8 +82,10 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         controller: NavigationController,
         controllerAs: 'vm'
     })
+
     .config(appConfig)
     .run(run);
+
 
 function run($http, $cookies){
 
