@@ -26,6 +26,11 @@ public class OrdersProcessDbImpl implements OrdersProcess {
    }
 
     @Override
+    public void delete(Integer id) {
+        this.ordersDAO.deleteBy(id);
+    }
+
+    @Override
     public int create(Orders product) throws BadRequestException {
         return Optional
                 .ofNullable( this.ordersDAO.create(product))

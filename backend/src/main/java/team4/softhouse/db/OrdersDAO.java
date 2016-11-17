@@ -22,6 +22,9 @@ public interface OrdersDAO {
    @SqlQuery("SELECT * FROM `orders` ")
    List<Orders> get();
 
+    @SqlUpdate("DELETE FROM `orders` WHERE orderid = :id")
+    int deleteBy(@Bind("id") int id);
+
 
 
 }

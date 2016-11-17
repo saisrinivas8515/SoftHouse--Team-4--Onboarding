@@ -34,15 +34,14 @@ public class OrdersResource {
        return this.ordersProcess.getorders();
     }
 
-
-   /* @GET
-    @Path("/{id}")
-    public Orders get() throws javassist.NotFoundException {
-        return this.ordersProcess.getorders();
-    }*/
-
    @POST
    public int OrderedProduct(Orders product) {return this.ordersProcess.create(product);}
+
+    @DELETE
+    @Path("/{id}")
+    public void deleteOrder(@PathParam("id") Integer id) {
+        this.ordersProcess.delete(id);
+    }
 
 
 
