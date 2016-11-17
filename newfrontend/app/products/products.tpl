@@ -14,12 +14,7 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-xs-12">
-            <a ng-click="vm.addFilter('vieworders')" class="btn btn-default">view orders</a>
-        </div>
-    </div>
-
+<form>
     <div class="row">
         <div class="col-xs-12">
             <table class="table">
@@ -35,7 +30,7 @@
                 </thead>
 
                 <tbody>
-                <tr ng-repeat="order in vm.allorders" data="order">
+                <tr ng-repeat="order in vm.allorders" >
                     <td>{{order.userid}}</td>
                     <td>{{order.username}}</td>
                     <td>{{order.productid}}</td>
@@ -48,7 +43,7 @@
             </table>
         </div>
     </div>
-
+</form>
 
     <div class="row">
         <product class="col-xs-12" ng-repeat="product in vm.products" data="product"></product>

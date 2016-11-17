@@ -24,7 +24,6 @@
 
                 <tbody>
                     <tr ng-repeat="product in vm.products">
-
                         <td>{{product.name}}</td>
                         <td>{{product.specifications}}</td>
                         <td>{{product.category}}</td>

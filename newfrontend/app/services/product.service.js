@@ -1,12 +1,12 @@
 function productService($http, $interpolate,$cookies) {
     var product = $interpolate('/api/product/{{id}}');
-    var order1 = $interpolate('/api/orders');
+    var order1 = $interpolate('/api/orders/{{id}}');
     var order2 = $interpolate('/api/orders/{{id}}');
 
     return {
         list: list,
         filter: filter,
-        filterorder: filterorder,
+        //filterorder: filterorder,
         create: create,
         order: order,
         getorders: getorders,
@@ -26,9 +26,9 @@ function productService($http, $interpolate,$cookies) {
         return $http.get(product() + '?type=' + filter)
     }
 
-    function filterorder(filter) {
+   /* function filterorder(filter) {
         return $http.get(order2() + '?type=' + filter)
-    }
+    }*/
 
 
     function create(name, category, specifications) {
@@ -42,7 +42,7 @@ function productService($http, $interpolate,$cookies) {
         return $http.post(product(), data);
     }
 
-   /* function order(orderedproduct) {
+   function order(orderedproduct) {
 
        var userid= $cookies.get('userid');
        var username= $cookies.get('username');
@@ -61,7 +61,6 @@ function productService($http, $interpolate,$cookies) {
 
         return $http.post(order1(), data);
     }
-*/
 
 
     function destroy(id) {
