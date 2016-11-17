@@ -31,15 +31,15 @@
                 </thead>
 
                 <tbody>
-                <tr ng-repeat="order in vm.allorders" >
+                <tr ng-repeat="order in vm.orders" >
                     <td>{{order.userid}}</td>
                     <td>{{order.username}}</td>
                     <td>{{order.productid}}</td>
                     <td>{{order.name}}</td>
                     <td>{{order.specifications}}</td>
                     <td>{{order.category}}</td>
-                    <td> <button style="background-color:black" type="submit"  class="btn btn-xs btn-success">Accept Order</button> </td>
-                    <td> <button style="background-color:black" type="submit"  class="btn btn-xs btn-success">Reject Order</button> </td>
+                    <td> <button type="submit" class="btn btn-xs btn-success" ng-click="vm.acceptOrder(order.productid)">Accept Order</button> </td>
+                    <td> <button type="submit" class="btn btn-xs btn-danger" ng-click="vm.rejectOrder(order.productid)">Reject Order</button> </td>
                 </tr>
                 </tbody>
 

@@ -10,4 +10,6 @@ public interface OrdersProcess {
 
     int create(Orders product);
     List<Orders> getorders() throws NotFoundException;
+    void delete(Integer id);
+
 }

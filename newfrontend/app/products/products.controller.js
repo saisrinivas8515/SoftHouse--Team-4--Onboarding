@@ -1,23 +1,20 @@
-function ProductsController(productService, $log) {
+function ProductsController(productService, orderService) {
     var vm = this;
 
     vm.$onInit = $onInit;
     vm.refreshProducts = refreshProducts;
-    vm.getallorders = getallorders;
+    vm.refreshOrders = refreshOrders;
     vm.hasProducts = hasProducts;
-    //vm.addFilter= addFilter;
+    vm.acceptOrder = acceptOrder;
+    vm.rejectOrder = rejectOrder;
+
 
     function $onInit() {
+        vm.orders= [];
         vm.products = [];
-        vm.filter = "";
         vm.refreshProducts();
-        vm.getallorders();
+        vm.refreshOrders();
     }
-
-    /*function addFilter(filter) {
-        vm.filter = filter;
-        vm.getallorders();
-    }*/
 
     function refreshProducts() {
 
@@ -26,15 +23,38 @@ function ProductsController(productService, $log) {
         });
     }
 
-    function getallorders() {
-        return productService.getorders().then(function refreshedProducts(response) {
-            vm.allorders = response.data;
+    function refreshOrders() {
+        return orderService.list().then(function refreshedProducts(response) {
+            vm.orders = response.data;
         });
     }
 
+    function acceptOrder(id) {
 
+        console.log('acceptingOrder' + id);
+        return orderService.destroy(id).then(vm.refreshOrders)
+
+    }
+
+    function rejectOrder(id) {
+
+        console.log('rejectingOrder' + id);
+
+        return orderService.destroy(id).then(vm.refreshOrders)
+
+    }
+
+    function onaccept(id) {
+
+
+
+        // return productService.onaccepting(id).then (vm.refreshProducts);
+
+    }
 
     function hasProducts() {
         return vm.products.length > 0;
     }
+
+
 }

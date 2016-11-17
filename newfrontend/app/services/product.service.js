@@ -1,4 +1,4 @@
-function productService($http, $interpolate,$cookies) {
+function productService($http, $interpolate,$cookies, $q) {
     var product = $interpolate('/api/product/{{id}}');
     var order1 = $interpolate('/api/orders/{{id}}');
     var order2 = $interpolate('/api/orders/{{id}}');
@@ -11,7 +11,8 @@ function productService($http, $interpolate,$cookies) {
         order: order,
         getorders: getorders,
         destroy: destroy,
-        update: update
+        update: update,
+        onaccepting: onaccepting
     };
 
     function list() {
@@ -60,6 +61,12 @@ function productService($http, $interpolate,$cookies) {
         };
 
         return $http.post(order1(), data);
+    }
+
+    function onaccepting(id) {
+
+        return $http.delete(product({ id: id }));
+
     }
 
 
