@@ -9,6 +9,7 @@ function InfoController(manageService, $log) {
     vm.addFilter = addFilter;
     vm.hasFilter = hasFilter;
     vm.listCategory = listCategory;
+    vm.alert = alert;
 
     function hasFilter() {
         return vm.filter.length > 0;
@@ -28,7 +29,8 @@ function InfoController(manageService, $log) {
     }
 
    function submittedorder(product){
-       return manageService.order(product);
+       return manageService.order(product)
+           .then(vm.alert);
 
    }
 
@@ -66,4 +68,8 @@ function InfoController(manageService, $log) {
 
     }
 
+    function alert(){
+        window.alert("Order Placed")
+    }
+    
 }
