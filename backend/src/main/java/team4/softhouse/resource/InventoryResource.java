@@ -3,6 +3,7 @@ package team4.softhouse.resource;
 import team4.softhouse.db.entity.Inventory;
 import team4.softhouse.process.InventoryProcess;
 
+import javax.annotation.security.PermitAll;
 import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
@@ -14,7 +15,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 //import team4.softhouse.process.NoteProcess;
 
-
+@RolesAllowed("ADMIN")
 @Path("/product")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -26,6 +27,7 @@ public class InventoryResource {
         this.inventoryProcess = checkNotNull(inventoryProcess);
     }
 
+    @PermitAll
     @GET
     public List<Inventory> listInventory(@QueryParam("type") String type) {
         System.out.println(type);
@@ -33,8 +35,15 @@ public class InventoryResource {
         {
             return this.inventoryProcess.list();
         }
-
         return this.inventoryProcess.findType(type);
+    }
+
+
+    @GET
+    @Path("/category")
+    public List<Inventory> listCategory() {
+        return this.inventoryProcess.listCategory();
+
     }
 
     @GET

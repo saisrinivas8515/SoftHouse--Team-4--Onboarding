@@ -1,4 +1,4 @@
-function ProductsController(productService, orderService) {
+function ProductsController(manageService, orderService) {
     var vm = this;
 
     vm.$onInit = $onInit;
@@ -18,7 +18,7 @@ function ProductsController(productService, orderService) {
 
     function refreshProducts() {
 
-        return productService.list().then(function refreshedProducts(response) {
+        return manageService.list().then(function refreshedProducts(response) {
             vm.products = response.data;
         });
     }

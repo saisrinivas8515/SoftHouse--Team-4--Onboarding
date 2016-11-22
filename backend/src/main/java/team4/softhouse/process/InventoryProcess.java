@@ -12,8 +12,10 @@ public interface InventoryProcess {
 
     List<Inventory> list();
     List<Inventory> findType( String Type);
+    List<Inventory> listCategory();
     Inventory create(Inventory inventory);
     Inventory update(Integer id, Inventory inventory) throws NotFoundException;
     Inventory find(Integer id) throws NotFoundException;
+
     void delete(Integer id);
 }

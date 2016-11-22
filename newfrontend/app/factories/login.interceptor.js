@@ -1,4 +1,4 @@
-function loginInterceptor() {
+function loginInterceptor($location) {
 
 
     return {
@@ -30,6 +30,7 @@ function loginInterceptor() {
 
             console.log(res);
            if(res.status === 500){window.alert("you have requested more than once")}
+           else if(res.status=== 401 || res.status ===403 ){$location.path('/')}
             return res;
 
         }

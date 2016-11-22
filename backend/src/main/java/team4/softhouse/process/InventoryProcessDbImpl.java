@@ -18,6 +18,9 @@ public class InventoryProcessDbImpl implements InventoryProcess {
     public List<Inventory> list() { return this.inventoryDAO.list(); }
 
     @Override
+    public List<Inventory> listCategory() { return this.inventoryDAO.listCategory(); }
+
+    @Override
     public List<Inventory> findType(String type) {return this.inventoryDAO.findByType(type);}
 
     @Override
@@ -30,6 +33,7 @@ public class InventoryProcessDbImpl implements InventoryProcess {
         inventory.setName(updatedInventory.getName());
         inventory.setCategory(updatedInventory.getCategory());
         inventory.setSpecifications(updatedInventory.getSpecifications());
+        inventory.setQuantity(updatedInventory.getQuantity());
 
         this.inventoryDAO.update(inventory);
 

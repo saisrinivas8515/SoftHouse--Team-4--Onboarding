@@ -1,5 +1,5 @@
 angular.module('app', ['ngRoute', 'ngCookies'])
-    .factory('productService', productService)
+    .factory('manageService', manageService)
     .factory('loginService', loginService)
     .factory('loginInterceptor', loginInterceptor)
     .factory('orderService', orderService)

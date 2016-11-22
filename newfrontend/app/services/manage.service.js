@@ -1,22 +1,33 @@
-function productService($http, $interpolate,$cookies, $q) {
+function manageService($http, $interpolate,$cookies, $q) {
     var product = $interpolate('/api/product/{{id}}');
     var order1 = $interpolate('/api/orders/{{id}}');
-    var order2 = $interpolate('/api/orders/{{id}}');
-
+    var category = $interpolate('/api/product/category');
     return {
         list: list,
         filter: filter,
-        //filterorder: filterorder,
         create: create,
         order: order,
         getorders: getorders,
         destroy: destroy,
         update: update,
-        onaccepting: onaccepting
+        onaccepting: onaccepting,
+        listCategories: listCategories
     };
+
+    function getCategories() {
+        var cat={xx};
+        return $http.get(product() + '?type=' + cat);
+
+    }
+
+
 
     function list() {
         return $http.get(product());
+    }
+
+    function listCategories() {
+        return $http.get(category());
     }
 
     function getorders() {
@@ -27,16 +38,12 @@ function productService($http, $interpolate,$cookies, $q) {
         return $http.get(product() + '?type=' + filter)
     }
 
-   /* function filterorder(filter) {
-        return $http.get(order2() + '?type=' + filter)
-    }*/
-
-
-    function create(name, category, specifications) {
+    function create(name, category, specifications, quantity) {
         var data = {
             name: name,
             category: category,
-            specifications: specifications
+            specifications: specifications,
+            quantity: quantity
 
         };
 
@@ -74,13 +81,15 @@ function productService($http, $interpolate,$cookies, $q) {
         return $http.delete(product({ id: id }));
     }
 
-    function update(id, name, category, specifications) {
+    function update(id, name, category, specifications, quantity) {
         var data = {
             name: name,
             category: category,
-            specifications: specifications
+            specifications: specifications,
+            quantity:quantity
         };
 
         return $http.put(product({ id: id }), data);
     }
+
 }

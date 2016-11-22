@@ -1,4 +1,4 @@
-function InfoController(productService, $log) {
+function InfoController(manageService, $log) {
 
     var vm = this;
 
@@ -19,14 +19,14 @@ function InfoController(productService, $log) {
         vm.refreshProducts();
     }
     function onUserDidSubmit(name, category, specifications) {
-        return productService.create(name, category, specifications)
+        return manageService.create(name, category, specifications)
             .then(vm.productsController.refreshProducts)
             .then(onUserDidReset)
             .catch(vm.showError);
     }
 
    function submittedorder(product){
-       return productService.order(product);
+       return manageService.order(product);
 
    }
 
@@ -38,10 +38,10 @@ function InfoController(productService, $log) {
     }
 
     function refreshProducts() {
-        var promise = productService.list();
+        var promise = manageService.list();
 
         if (vm.hasFilter()) {
-            promise = productService.filter(vm.filter);
+            promise = manageService.filter(vm.filter);
         }
 
         return promise .then(function refreshedProducts(response) {
