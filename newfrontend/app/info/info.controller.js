@@ -8,6 +8,7 @@ function InfoController(manageService, $log) {
     vm.hasProducts = hasProducts;
     vm.addFilter = addFilter;
     vm.hasFilter = hasFilter;
+    vm.listCategory = listCategory;
 
     function hasFilter() {
         return vm.filter.length > 0;
@@ -17,6 +18,7 @@ function InfoController(manageService, $log) {
         vm.products = [];
         vm.filter = "";
         vm.refreshProducts();
+        vm.listCategory();
     }
     function onUserDidSubmit(name, category, specifications) {
         return manageService.create(name, category, specifications)
@@ -54,4 +56,14 @@ function InfoController(manageService, $log) {
     function hasProducts() {
         return vm.products.length > 0;
     }
+
+    function listCategory(){
+        return manageService.listCategories()
+            .then(function listCat(response){
+                vm.Cat = response.data;
+                console.log(vm.Cat)
+        });
+
+    }
+
 }

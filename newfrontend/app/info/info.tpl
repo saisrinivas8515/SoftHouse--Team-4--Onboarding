@@ -2,10 +2,16 @@
     <navigation class="row"></navigation>
 
     <div class="row">
-        <div class="col-xs-12">
-            <a ng-click="vm.addFilter('Mobile')" class="btn btn-default">Mobile</a>
-            <a ng-click="vm.addFilter('Laptop')" class="btn btn-default">Laptop</a>
-            <a ng-click="vm.addFilter('')"  class="btn btn-default">all products</a>
+        <div class="col-xs-3">
+            <select class="form-control" id="mySelect" ng-change="vm.addFilter(selectedCat)" ng-model="selectedCat">
+                <option value="" selected>Category</option>
+                <option ng-repeat="xx in vm.Cat" value="{{xx.category}}">
+                    {{xx.category}}
+                </option>
+            </select>
+            <!--<a ng-click="vm.addFilter('Mobile')" class="btn btn-default">Mobile</a>-->
+            <!--<a ng-click="vm.addFilter('Laptop')" class="btn btn-default">Laptop</a>-->
+            <!--<a ng-click="vm.addFilter('')"  class="btn btn-default">all products</a>-->
         </div>
     </div>
 
