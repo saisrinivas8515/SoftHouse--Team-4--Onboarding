@@ -9,8 +9,6 @@ function orderStatusController(orderService) {
         vm.refreshOrders();
     }
 
-
-
     function refreshOrders() {
         return orderService.list().then(function refreshedProducts(response) {
             vm.orders = response.data;
