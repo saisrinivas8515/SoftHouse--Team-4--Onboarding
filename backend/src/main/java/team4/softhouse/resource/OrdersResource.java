@@ -39,12 +39,17 @@ public class OrdersResource {
    @POST
    public int OrderedProduct(Orders product) {return this.ordersProcess.create(product);}
 
-    @DELETE
+/*    @DELETE
     @Path("/{id}")
     public void deleteOrder(@PathParam("id") Integer id) {
         this.ordersProcess.delete(id);
-    }
+    }*/
 
+    @PUT
+    @Path("/{id}")
+    public void updateOrder(@PathParam("id") Integer id, Integer status) {
+        this.ordersProcess.updateOrder(id, status);
+    }
 
 
 }

@@ -26,8 +26,8 @@ public class OrdersProcessDbImpl implements OrdersProcess {
    }
 
     @Override
-    public void delete(Integer id) {
-        this.ordersDAO.deleteBy(id);
+    public void updateOrder(Integer id, Integer status) {
+        this.ordersDAO.updateBy(id, status);
     }
 
     @Override

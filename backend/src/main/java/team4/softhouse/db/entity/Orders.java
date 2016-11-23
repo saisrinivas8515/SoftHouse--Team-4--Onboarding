@@ -23,6 +23,10 @@ public class Orders {
 
     @JsonProperty
     @NotEmpty
+    private Integer status;
+
+    @JsonProperty
+    @NotEmpty
     private String username;
 
     @JsonProperty
@@ -35,7 +39,7 @@ public class Orders {
 
     public Orders (){}
 
-    public Orders(Integer orderid, String name, Integer productid, Integer userid, String username, String category, String specifications) {
+    public Orders(Integer orderid, String name, Integer productid, Integer userid, Integer status, String username, String category, String specifications) {
         this.orderid = orderid;
         this.username=username;
         this.name = name;
@@ -43,6 +47,15 @@ public class Orders {
         this.userid = userid;
         this.category = category;
         this.specifications = specifications;
+        this.status = status;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
     public String getUsername() {
