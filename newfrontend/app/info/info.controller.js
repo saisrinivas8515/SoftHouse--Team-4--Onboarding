@@ -21,19 +21,11 @@ function InfoController(manageService, $log) {
         vm.refreshProducts();
         vm.listCategory();
     }
-    function onUserDidSubmit(name, category, specifications) {
-        return manageService.create(name, category, specifications)
-            .then(vm.productsController.refreshProducts)
-            .then(onUserDidReset)
-            .catch(vm.showError);
-    }
 
    function submittedorder(product){
-
        var status=0;
        return manageService.order(product,status)
            .then(vm.alert);
-
    }
 
 

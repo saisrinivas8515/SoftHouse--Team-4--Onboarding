@@ -15,7 +15,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 //import team4.softhouse.process.NoteProcess;
 
-@RolesAllowed("ADMIN")
+
 @Path("/product")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -38,7 +38,7 @@ public class InventoryResource {
         return this.inventoryProcess.findType(type);
     }
 
-
+    @PermitAll
     @GET
     @Path("/category")
     public List<Inventory> listCategory() {

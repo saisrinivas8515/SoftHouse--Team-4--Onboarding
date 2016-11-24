@@ -19,7 +19,7 @@ public interface OrdersDAO {
     @GetGeneratedKeys
     int create(@BindBean Orders product);
 
-   @SqlQuery("SELECT * FROM `orders` ")
+   @SqlQuery("SELECT * FROM `orders`")
    List<Orders> get();
 
     @SqlUpdate("UPDATE `orders` set status = :status WHERE orderid = :id")

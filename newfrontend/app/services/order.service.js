@@ -1,5 +1,5 @@
 function orderService($http, $interpolate,$cookies) {
-    var orders = $interpolate('/api/orders/{{id}}');
+    var orders = $interpolate('/api/orders/{{orderid}}');
 
     return {
         list: list,
@@ -17,7 +17,6 @@ function orderService($http, $interpolate,$cookies) {
         var userid= $cookies.get('userid');
         var username= $cookies.get('username');
 
-
         console.log(userid);
         var data = {
 
@@ -33,9 +32,13 @@ function orderService($http, $interpolate,$cookies) {
         return $http.post(orders(), data);
     }
 
-    function updateOrder(id,orderstatus) {
-        var status=orderstatus;
-        return $http.put(orders({ id: id }), status);
+    function updateOrder(orderid,productid,orderstatus) {
+        var data = {
+            productid:productid,
+            status: orderstatus
+        };
+
+        return $http.put(orders({ orderid: orderid}), data);
     }
 
   /*  function destroy(id) {

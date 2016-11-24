@@ -37,4 +37,7 @@ public interface InventoryDAO {
     @SqlUpdate("UPDATE `inventory` SET name = :name, category = :category, quantity =:quantity WHERE id = :id")
     Integer update(@BindBean Inventory inventory);
 
+    @SqlUpdate("UPDATE `inventory` SET quantity =quantity-1 WHERE id = :productid")
+    void updateQuantity(@Bind("productid") int productid);
+
 }

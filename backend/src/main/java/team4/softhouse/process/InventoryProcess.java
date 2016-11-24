@@ -16,6 +16,7 @@ public interface InventoryProcess {
     Inventory create(Inventory inventory);
     Inventory update(Integer id, Inventory inventory) throws NotFoundException;
     Inventory find(Integer id) throws NotFoundException;
+    void updateQuantity(Integer productid);
 
     void delete(Integer id);
 }

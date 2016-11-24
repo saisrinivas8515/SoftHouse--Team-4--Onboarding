@@ -19,7 +19,7 @@
 
             <div class="col-xs-3">
                 <select class="form-control" id="mySelect" ng-change="vm.selectedCategory(vm.selectedCat)" ng-model="vm.selectedCat">
-                    <option value="" disabled selected>Select your category</option>
+                    <option value="" disabled selected>Select a category</option>
                     <option ng-repeat="xx in vm.Cat" value="{{xx.category}}">{{xx.category}}</option>
                 </select>
             </div>

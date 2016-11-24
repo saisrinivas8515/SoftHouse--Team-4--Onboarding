@@ -15,15 +15,12 @@ function LoginController (loginService, $location) {
     function onUserDidSubmit(username, password) {
 
         var test= function (response) {
-
             if (response.status == 200) {
-                loginService.SetCredentials(username, password, response.data.id);
+                loginService.SetCredentials(username, password, response.data.id, response.data.role);
                 $location.path('/home');
             } else {
-
                 vm.showError();
                 vm.onReset();
-
             }
         }
 

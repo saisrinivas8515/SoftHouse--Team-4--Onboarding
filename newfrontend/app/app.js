@@ -62,9 +62,9 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         }
     })
 
-    .component('orderlog', {
-        templateUrl: 'app/orderlog/orderlog.tpl',
-        controller: orderLogController,
+    .component('processedorders', {
+        templateUrl: 'app/processedorders/processedorders.tpl',
+        controller: processedOrdersController,
         controllerAs: 'vm',
 
         require: {

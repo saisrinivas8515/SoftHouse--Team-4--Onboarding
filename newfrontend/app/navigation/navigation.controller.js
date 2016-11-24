@@ -7,27 +7,23 @@ function NavigationController($cookies, loginService, $location) {
 
     function $onInit() {
         vm.products = [];
+        vm.role=[];
     }
 
     function hasCookies() {
-
         var authdata = $cookies.get('authdata') || null;
+         vm.role = $cookies.get('role');
+        //console.log(role);
 
         if (authdata!= null){
-
             vm.products= [1];
         }
-
         return vm.products.length > 0;
     }
 
     function logout() {
-
-        //console.log("test");
-
         loginService.ClearCredentials();
 
         $location.path('/home');
     }
-
 }

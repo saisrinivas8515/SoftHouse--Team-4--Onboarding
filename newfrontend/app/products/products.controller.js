@@ -35,10 +35,10 @@ function ProductsController(manageService, orderService) {
         });
     }
 
-    function acceptOrder(id) {
+    function acceptOrder(orderid,productid) {
         var status=1;
-        console.log('acceptingOrder' + id);
-        return orderService.updateOrder(id, status).then(vm.refreshOrders)
+        //console.log('acceptingOrder' + id);
+        return orderService.updateOrder(orderid, productid, status).then(vm.refreshOrders)
 
     }
 

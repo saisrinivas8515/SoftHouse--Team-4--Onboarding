@@ -19,16 +19,18 @@ function loginService($http, $interpolate, $cookies) {
         return $http.post(login(), data)
 
     }
+
     function ClearCredentials() {
         $http.defaults.headers.common.Autorization = 'Basic';
         $cookies.remove('authdata');
         $cookies.remove('userid');
         $cookies.remove('username');
-
-
+        $cookies.remove('role');
     }
-    function SetCredentials(username, password, id) {
-        console.log(id);
+
+
+    function SetCredentials(username, password, id, role) {
+        //console.log(role);
         //console.log($http.defaults.headers.common.Autorization);
         var authdata = Base64.encode(username + ':' + password);
         $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata;
@@ -37,6 +39,7 @@ function loginService($http, $interpolate, $cookies) {
         $cookies.put('authdata', authdata);
         $cookies.put('userid', id);
         $cookies.put('username', username);
+        $cookies.put('role', role);
 
     }
 }

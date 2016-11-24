@@ -1,7 +1,9 @@
 package team4.softhouse.resource;
 
 
+import org.glassfish.jersey.model.internal.RankedComparator;
 import team4.softhouse.db.entity.Orders;
+import team4.softhouse.process.InventoryProcess;
 import team4.softhouse.process.OrdersProcess;
 
 import javax.annotation.security.PermitAll;
@@ -21,9 +23,15 @@ import static jersey.repackaged.com.google.common.base.Preconditions.checkNotNul
 public class OrdersResource {
 
     private OrdersProcess ordersProcess;
+    private InventoryProcess inventoryProcess;
 
-    public OrdersResource(OrdersProcess ordersProcess){
+    /*public OrdersResource(OrdersProcess ordersProcess){
         this.ordersProcess = checkNotNull(ordersProcess);
+    }*/
+
+    public OrdersResource(OrdersProcess ordersProcess, InventoryProcess inventoryProcess) {
+        this.ordersProcess = ordersProcess;
+        this.inventoryProcess = inventoryProcess;
     }
 
     @RolesAllowed("ADMIN")
@@ -46,12 +54,13 @@ public class OrdersResource {
     }*/
 
     @PUT
-    @Path("/{id}")
-    public void updateOrder(@PathParam("id") Integer id, Integer status) {
-        this.ordersProcess.updateOrder(id, status);
+    @Path("/{orderid}")
+    public void updateOrder(@PathParam("orderid") Integer orderid, Orders data) {
+        this.ordersProcess.updateOrder(orderid, data.getStatus());
+        if(data.getStatus()==1){
+        this.inventoryProcess.updateQuantity(data.getProductid());
     }
-
-
+    }
 }
 
 

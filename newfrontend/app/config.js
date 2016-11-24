@@ -1,8 +1,8 @@
 function appConfig($routeProvider, $httpProvider) {
     $routeProvider
         .when('/manage', {template: '<products></products>',resolve:{loggedIn:onlyLoggedIn}})
-        .when('/orderlog', {template: '<orderlog></orderlog>',resolve:{loggedIn:onlyLoggedIn}})
-        .when('/viewproducts', {template: '<info></info>'})
+        .when('/processedorders', {template: '<processedorders></processedorders>',resolve:{loggedIn:onlyLoggedIn}})
+        .when('/viewproducts', {template: '<info></info>',resolve:{loggedIn:onlyLoggedIn}})
         .when('/', {template: '<home></home>'})
         .when('/login', {template: '<login></login>'})
         .otherwise({
