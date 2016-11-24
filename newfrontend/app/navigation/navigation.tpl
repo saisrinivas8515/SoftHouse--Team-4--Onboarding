@@ -8,6 +8,7 @@
       <li><a href="#/viewproducts" >Products</a></li>
       <li><a href="#/manage" ng-if="(vm.hasCookies() && vm.role == 'adm')">Manage</a></li>
       <li><a href="#/processedorders" ng-if="(vm.hasCookies() && vm.role=='adm')">Processed Orders</a></li>
+      <li><a href="#/orderhistory" ng-if="(vm.hasCookies() && vm.role=='emp')">Order History</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
        <li><a href="#/login" ng-if="!vm.hasCookies()"> Login</a></li>

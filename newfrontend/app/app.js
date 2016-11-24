@@ -74,6 +74,17 @@ angular.module('app', ['ngRoute', 'ngCookies'])
     })
 
 
+    .component('orderhistory', {
+        templateUrl: 'app/orderhistory/orderhistory.tpl',
+        controller: orderHistoryController,
+        controllerAs: 'vm',
+
+        require: {
+            navigationController: '^?navigation'
+        }
+
+    })
+
     .component('login', {
         templateUrl: 'app/login/login.tpl',
         controller: LoginController,

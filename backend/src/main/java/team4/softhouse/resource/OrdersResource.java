@@ -34,7 +34,7 @@ public class OrdersResource {
         this.inventoryProcess = inventoryProcess;
     }
 
-    @RolesAllowed("ADMIN")
+   
    @GET
     public List<Orders> get(@QueryParam("type") String type) throws javassist.NotFoundException {
         System.out.println(type);

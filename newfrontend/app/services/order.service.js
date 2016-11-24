@@ -17,7 +17,7 @@ function orderService($http, $interpolate,$cookies) {
         var userid= $cookies.get('userid');
         var username= $cookies.get('username');
 
-        console.log(userid);
+        //console.log(userid);
         var data = {
 
             productid:orderedproduct.id,
