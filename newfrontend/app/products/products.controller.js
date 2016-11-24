@@ -42,12 +42,11 @@ function ProductsController(manageService, orderService) {
 
     }
 
-    function rejectOrder(id) {
-
+    function rejectOrder(orderid,productid) {
         var status=2;
-        console.log('rejectingOrder' + id);
+       // console.log('rejectingOrder' + id);
 
-        return orderService.updateOrder(id, status).then(vm.refreshOrders)
+        return orderService.updateOrder(orderid, productid, status).then(vm.refreshOrders)
 
     }
 
