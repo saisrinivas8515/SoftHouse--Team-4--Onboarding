@@ -44,7 +44,7 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         }
     })
 
-    // .component('navigation1', { "templateUrl": 'app/navigation/navigation1.tpl'})
+
     .component('info', {
         templateUrl: 'app/info/info.tpl',
         controller: InfoController,
@@ -59,9 +59,21 @@ angular.module('app', ['ngRoute', 'ngCookies'])
 
         require: {
             navigationController: '^?navigation'
-
         }
     })
+
+    .component('orderlog', {
+        templateUrl: 'app/orderlog/orderlog.tpl',
+        controller: orderLogController,
+        controllerAs: 'vm',
+
+        require: {
+            navigationController: '^?navigation'
+        }
+
+    })
+
+
     .component('login', {
         templateUrl: 'app/login/login.tpl',
         controller: LoginController,

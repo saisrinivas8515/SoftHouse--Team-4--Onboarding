@@ -7,6 +7,7 @@ function ProductsController(manageService, orderService) {
     vm.hasProducts = hasProducts;
     vm.acceptOrder = acceptOrder;
     vm.rejectOrder = rejectOrder;
+    vm.orderstatus = orderstatus;
 
 
     function $onInit() {
@@ -14,6 +15,11 @@ function ProductsController(manageService, orderService) {
         vm.products = [];
         vm.refreshProducts();
         vm.refreshOrders();
+    }
+
+    function  orderstatus() {
+        return vm.orders.status >0;
+
     }
 
     function refreshProducts() {
@@ -30,17 +36,18 @@ function ProductsController(manageService, orderService) {
     }
 
     function acceptOrder(id) {
-
+        var status=1;
         console.log('acceptingOrder' + id);
-        return orderService.destroy(id).then(vm.refreshOrders)
+        return orderService.updateOrder(id, status).then(vm.refreshOrders)
 
     }
 
     function rejectOrder(id) {
 
+        var status=2;
         console.log('rejectingOrder' + id);
 
-        return orderService.destroy(id).then(vm.refreshOrders)
+        return orderService.updateOrder(id, status).then(vm.refreshOrders)
 
     }
 

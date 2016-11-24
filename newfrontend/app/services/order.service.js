@@ -1,14 +1,15 @@
-function orderService($http, $interpolate,$cookies, $q) {
-    var order = $interpolate('/api/orders/{{id}}');
+function orderService($http, $interpolate,$cookies) {
+    var orders = $interpolate('/api/orders/{{id}}');
 
     return {
         list: list,
         create: create,
-        destroy: destroy
+        //destroy: destroy,
+        updateOrder: updateOrder
     };
 
     function list() {
-        return $http.get(order());
+        return $http.get(orders());
     }
 
     function create(orderedproduct) {
@@ -29,12 +30,16 @@ function orderService($http, $interpolate,$cookies, $q) {
 
         };
 
-        return $http.post(order(), data);
+        return $http.post(orders(), data);
     }
 
+    function updateOrder(id,orderstatus) {
+        var status=orderstatus;
+        return $http.put(orders({ id: id }), status);
+    }
 
-    function destroy(id) {
+  /*  function destroy(id) {
         return $http.delete(order({ id: id }));
-    }
+    } */
 
 }

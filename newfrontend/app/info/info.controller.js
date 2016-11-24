@@ -29,7 +29,9 @@ function InfoController(manageService, $log) {
     }
 
    function submittedorder(product){
-       return manageService.order(product)
+
+       var status=0;
+       return manageService.order(product,status)
            .then(vm.alert);
 
    }

@@ -18,7 +18,7 @@
                     </thead>
 
                     <tbody>
-                    <tr ng-repeat="order in vm.orders" >
+                    <tr ng-repeat="order in vm.orders" ng-if="order.status==0" >
                         <td>{{order.userid}}</td>
                         <td>{{order.username}}</td>
                         <td>{{order.productid}}</td>

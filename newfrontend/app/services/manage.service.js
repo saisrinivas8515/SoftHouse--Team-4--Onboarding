@@ -50,7 +50,7 @@ function manageService($http, $interpolate,$cookies, $q) {
         return $http.post(product(), data);
     }
 
-   function order(orderedproduct) {
+   function order(orderedproduct, status) {
 
        var userid= $cookies.get('userid');
        var username= $cookies.get('username');
@@ -63,7 +63,8 @@ function manageService($http, $interpolate,$cookies, $q) {
             category: orderedproduct.category,
             specifications: orderedproduct.specifications,
             userid: parseInt(userid),
-            username: username
+            username: username,
+            status: status
 
         };
 

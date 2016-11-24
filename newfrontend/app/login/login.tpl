@@ -33,6 +33,9 @@
          <empty_space1 class="col-xs-4"></empty_space1>
      </div>
  </section>
+
+
+    <order-status></order-status>
     </div>
 
 
