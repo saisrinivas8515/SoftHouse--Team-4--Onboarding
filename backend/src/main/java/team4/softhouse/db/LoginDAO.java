@@ -14,7 +14,7 @@ public interface LoginDAO {
     @SqlUpdate("CREATE TABLE IF NOT EXISTS login(id int auto_increment primary key, username varchar(20), password varchar(20), role varchar(20))")
     public void createTable();
 
-    @SqlUpdate("Merge into login values(0,'admin','admin','adm')")
+    @SqlUpdate("Merge into login values(0,'admin','admin','Admin')")
     public void insertAdminDetails();
 
     @SqlQuery("SELECT * FROM login;")

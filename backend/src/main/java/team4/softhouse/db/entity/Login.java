@@ -28,6 +28,7 @@ public class Login implements Principal {
     public Login(String name, String password){
         this.username=name;
         this.password=password;
+
     }
 
     public Login(Integer id, String name, String password){
@@ -35,6 +36,7 @@ public class Login implements Principal {
         this.id=id;
         this.username=name;
         this.password=password;
+
     }
 
     public Integer getId() {

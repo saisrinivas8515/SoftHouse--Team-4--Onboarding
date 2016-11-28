@@ -52,8 +52,6 @@ function ProductsController(manageService, orderService) {
 
     function onaccept(id) {
 
-
-
         // return productService.onaccepting(id).then (vm.refreshProducts);
 
     }

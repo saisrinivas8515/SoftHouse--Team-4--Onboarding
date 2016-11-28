@@ -16,6 +16,6 @@ public class LoginAuthorizer implements Authorizer<Login> {
     public boolean authorize(Login login, String role) throws ForbiddenException {
 
         Login test = this.loginProcess.verify(login);
-        return test.getRole().equals("adm") && role.equals("ADMIN");
+        return test.getRole().equals("Admin") && role.equals("ADMIN");
     }
 }
