@@ -72,6 +72,16 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         }
 
     })
+    .component('manageorders', {
+        templateUrl: 'app/manageorders/manageorders.tpl',
+        controller: manageOrdersController,
+        controllerAs: 'vm',
+
+        require: {
+            navigationController: '^?navigation'
+        }
+
+    })
 
 
     .component('orderhistory', {
