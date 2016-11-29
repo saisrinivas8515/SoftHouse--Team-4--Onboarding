@@ -54,7 +54,7 @@ angular.module('app', ['ngRoute', 'ngCookies'])
 
         }
     })
-    .component('home', {templateUrl: 'app/home/home.tpl',
+    .component('home', {templateUrl: 'app/home/home.html',
 
         require: {
             navigationController: '^?navigation'
