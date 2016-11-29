@@ -13,3 +13,7 @@
     margin: 0px;
     text-align: left;
 }
+.active {
+    background-color: rgba(64, 186, 255, 0.67);
+    color: white;
+}
