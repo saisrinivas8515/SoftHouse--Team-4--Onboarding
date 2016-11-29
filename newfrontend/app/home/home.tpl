@@ -123,54 +123,6 @@
 
 <div class="container">
     <navigation class="row"></navigation>
-    <div class="carousel slide" id="myCarousel" data-interval="1000">
-        <ol class="carousel-indicators">
-            <li data-slide-to="0" data-target="#myCarousel" class="active">
-            </li>
-            <li data-slide-to="1" data-target="#myCarousel">
-            </li>
-            <li data-slide-to="2" data-target="#myCarousel">
-            </li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <img alt="" src="app/Img/slide1.jpg" />
-                <!--  <div class="carousel-caption">
-                     <h4>
-                          Softhouse
-                      </h4>
-                      <p>
-                          Softhouse
-                      </p>
-                </div>-->
-            </div>
-            <div class="item">
-                <img alt="" src="app/Img/slide2.jpg" />
-                <!--  <div class="carousel-caption">
-                     <h4>
-                          Softhouse
-                      </h4>
-                      <p>
-                          Softhouse
-                      </p>
-                </div>-->
-            </div>
-            <div class="item">
-                <img alt="" src="app/Img/slide3.jpg" />
-                <!-- <div class="carousel-caption">
-                    - <h4>
-                          Softhouse
-                      </h4>
-                      <p>
-                          Softhouse
-                </div></p>-->
-            </div>
-        </div>
-        <div class="text-center">
-            <input type="button" class="btn prev-slide" value="&lsaquo;">
-            <input type="button" class="btn next-slide" value="&rsaquo;">
-        </div>
-    </div>
     <hr>
     <div class="row clearfix">
         <div class="col-md-12 column">
@@ -332,16 +284,4 @@
     <p class="copyright">
         © Copyright - Softhouse
     </p>
-    <script>
-        $(function(){
-            // to prev
-            $(".prev-slide").click(function(){
-                $("#myCarousel").carousel('prev');
-            });
-            // to next
-            $(".next-slide").click(function(){
-                $("#myCarousel").carousel('next');
-            });
-        });
-    </script>
 </div>

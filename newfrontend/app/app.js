@@ -44,8 +44,7 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         }
     })
 
-
-    .component('info', {
+   .component('info', {
         templateUrl: 'app/info/info.tpl',
         controller: InfoController,
         controllerAs: 'vm',
