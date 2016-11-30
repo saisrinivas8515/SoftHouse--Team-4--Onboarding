@@ -26,8 +26,8 @@
                         <td>{{order.name}}</td>
                         <td>{{order.specifications}}</td>
                         <td>{{order.category}}</td>
-                        <td> <button type="submit" class="btn btn-xs btn-success" ng-click="vm.acceptOrder(order.orderid,order.productid)">Accept Order</button> </td>
-                        <td> <button type="submit" class="btn btn-xs btn-danger" ng-click="vm.rejectOrder(order.orderid,order.productid)">Reject Order</button> </td>
+                        <td> <button type="submit" class="btn btn-xs btn-success" ng-click="vm.acceptOrder(order.orderid,order.productid)"><i class="fa fa-check" aria-hidden="true"></i> Accept Order</button> </td>
+                        <td> <button type="submit" class="btn btn-xs btn-danger" ng-click="vm.rejectOrder(order.orderid,order.productid)"><i class="fa fa-times" aria-hidden="true"></i> Reject Order</button> </td>
                     </tr>
                     </tbody>
 

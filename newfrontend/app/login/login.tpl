@@ -26,7 +26,7 @@
              </div>
 
              <div class="panel-footer text-right">
-                 <button type="submit" class="btn btn-xs btn-info">Login</button>
+                 <button type="submit" class="btn btn-xs btn-info">Login <i class="fa fa-sign-in" aria-hidden="true" style="font-size:18px"></i></button>
              </div>
 
          </form>

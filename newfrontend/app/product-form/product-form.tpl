@@ -42,7 +42,8 @@
 
     <div class="panel-footer text-right">
         <button type="submit" style="background-color: black" class="btn btn-xs btn-success">Submit</button>
-        <button type="reset" class="btn btn-xs btn-default" ng-click="vm.onReset()">Reset</button>
+        <button type="reset" class="btn btn-xs btn-default" ng-click="vm.onReset()"><i class="fa fa-refresh" aria-hidden="true"></i>
+            Reset</button>
     </div>
 
 </form>
