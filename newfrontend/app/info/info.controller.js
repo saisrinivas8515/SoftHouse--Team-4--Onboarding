@@ -24,8 +24,10 @@ function InfoController(manageService, $log) {
 
    function submittedorder(product){
        var status=0;
-       return manageService.order(product,status)
-           .then(vm.alert);
+       return manageService.order(product,status).then(function error(response){
+           var errorstatus=response.status;
+           if(errorstatus!=500){vm.alert();}
+       });
    }
 
 
