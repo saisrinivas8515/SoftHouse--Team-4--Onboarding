@@ -6,6 +6,7 @@ function appConfig($routeProvider, $httpProvider) {
         .when('/viewproducts', {template: '<info></info>',resolve:{loggedIn:onlyLoggedIn}})
         .when('/orderhistory', {template: '<orderhistory></orderhistory>',resolve:{loggedIn:onlyLoggedIn}})
         .when('/', {template: '<home></home>'})
+        .when('/homee',{template: '<homee></homee>'})
         .when('/login', {template: '<login></login>'})
         .otherwise({
             redirectTo: '/'

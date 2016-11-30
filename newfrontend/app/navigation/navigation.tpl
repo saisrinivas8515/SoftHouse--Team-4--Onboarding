@@ -3,7 +3,7 @@
 
   <div class="container-fluid">
     <div class="navbar-header-fixed-top">
-      <a  class="navbar-brand" href="#/" ><b>SOFTHOUSE</b></a>
+      <a  class="navbar-brand" href="#/homee" ><b>SOFTHOUSE</b></a>
     </div>
 
     <ul class="nav navbar-nav">

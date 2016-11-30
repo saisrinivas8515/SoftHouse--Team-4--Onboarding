@@ -6,7 +6,7 @@ body, html {
     color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-9 {
     position: relative;
     opacity: 5;
     background-attachment: fixed;
@@ -38,6 +38,10 @@ body, html {
     background-image: url("../app/Img/orderlog.png");
     min-height: 900px;
     opacity: 5;
+}
+.bgimg-9 {
+    background-image: url("../app/Img/Inventory.png");
+    min-height: 100%;
 }
 
 .caption {
@@ -73,4 +77,8 @@ h3 {
 .fa-spinner:before {
     content: "\f110";
     color: black;
+}
+.fa-cart-plus:before {
+    content: "\f217";
+    color: gold;
 }

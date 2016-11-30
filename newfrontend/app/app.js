@@ -61,6 +61,14 @@ angular.module('app', ['ngRoute', 'ngCookies'])
         }
     })
 
+    .component('homee', {templateUrl: 'app/home/homee.html',
+
+        require: {
+            navigationController: '^?navigation'
+        }
+    })
+
+
     .component('processedorders', {
         templateUrl: 'app/processedorders/processedorders.tpl',
         controller: processedOrdersController,
