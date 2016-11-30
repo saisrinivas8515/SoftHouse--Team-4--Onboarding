@@ -35,7 +35,7 @@
 
         <div class="form-group">
             <label for="quantity">Quantity</label>
-            <input id="quantity" name="quantity" class="form-control" ng-model="vm.quantity" placeholder="enter quantity ..." required>
+            <input id="quantity" name="quantity" class="form-control" ng-model="vm.quantity" placeholder="enter quantity ..." required type="number">
         </div>
 
     </div>
