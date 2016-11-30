@@ -9,7 +9,7 @@ import java.util.List;
 
 @RegisterMapperFactory(BeanMapperFactory.class)
 public interface InventoryDAO {
-    @SqlUpdate("CREATE TABLE IF NOT EXISTS inventory(id int auto_increment primary key, name varchar(100), category varchar(100), specifications varchar(2000), quantity int NOT NULL)")
+    @SqlUpdate("CREATE TABLE IF NOT EXISTS inventory(id int auto_increment primary key, name varchar(10), category varchar(100), specifications varchar(2000), quantity int NOT NULL)")
     void createTable();
 
     @SqlUpdate("INSERT INTO `inventory` VALUES(:id, :name, :category, :specifications, :quantity)")

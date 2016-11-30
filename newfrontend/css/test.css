@@ -27,9 +27,10 @@ body, html {
 
 .bgimg-3 {
     background-image: url("../app/Img/software_development.jpg");
-    min-height: 400px;}
+    min-height: 400px;
+}
     
-    .bgimg-4 {
+.bgimg-4 {
     background-image: url("../app/Img/contact us.jpg");
         min-height: 550px;
 }

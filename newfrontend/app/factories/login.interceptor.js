@@ -1,6 +1,5 @@
 function loginInterceptor($location) {
 
-
     return {
         request: function (config) {
             // console.log(config);
