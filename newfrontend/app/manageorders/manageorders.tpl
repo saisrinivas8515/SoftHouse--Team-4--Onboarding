@@ -1,10 +1,16 @@
-<div class="container">
+<!--<div class="container">-->
+    <!--<div class="bgimg-5">-->
+
+        <!--<div class="caption">-->
+            <!--<span class="border" style="alignment: top">ORDERS PLACED</span>-->
+        <!--</div>-->
 
     <navigation class="row"></navigation>
 
     <form>
-        <div class="row">
-            <h2 class="text-center">Orders Placed</h2>
+        <div class="row" style="font-size: large">
+            <div style="color: black"></div>
+            <h1 class="text-center">Orders Placed</h1>
             <div class="col-xs-12">
                 <table class="table">
                     <thead>
@@ -35,4 +41,3 @@
             </div>
         </div>
     </form>
-</div>

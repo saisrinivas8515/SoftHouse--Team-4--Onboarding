@@ -1,8 +1,6 @@
 
 <div class="container">
-
     <navigation class="row"></navigation>
-
     <div class="row">
         <h2 class="text-center">Orders Log</h2>
         <div class="col-xs-12">
@@ -35,4 +33,5 @@
             </table>
         </div>
     </div>
+</div>
 </div>

@@ -11,7 +11,7 @@ public class Inventory {
 
     @JsonProperty
     @NotEmpty
-    @Length(max =10 , message = "must not be longer than 10 characters")
+    @Length(max =50 , message = "must not be longer than 50 characters")
     private String name;
 
     @JsonProperty

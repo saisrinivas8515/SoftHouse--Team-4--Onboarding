@@ -439,6 +439,7 @@
 }
 .fa-check-circle:before {
   content: "\f058";
+  color: green;
 }
 .fa-question-circle:before {
   content: "\f059";
@@ -451,6 +452,7 @@
 }
 .fa-times-circle-o:before {
   content: "\f05c";
+  color: red;
 }
 .fa-check-circle-o:before {
   content: "\f05d";
@@ -941,6 +943,7 @@
 }
 .fa-spinner:before {
   content: "\f110";
+  color: black;
 }
 .fa-circle:before {
   content: "\f111";

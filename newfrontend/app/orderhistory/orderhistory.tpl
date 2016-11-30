@@ -22,9 +22,9 @@
                     <td>{{order.name}}</td>
                     <td>{{order.specifications}}</td>
                     <td>{{order.category}}</td>
-                    <td ng-if="order.status==1">{{"Order accepted"}}</td>
-                    <td ng-if="order.status==2">{{"Order rejected"}}</td>
-                    <td ng-if="order.status==0">{{"Order pending"}}</td>
+                    <td ng-if="order.status==1"><i class="fa fa-check-circle" aria-hidden="true" style="font-size: x-large"></i></td>
+                    <td ng-if="order.status==2"><i class="fa fa-times" aria-hidden="true" style="font-size: x-large"></i></td>
+                    <td ng-if="order.status==0"><i class="fa fa-spinner" aria-hidden="true" style="font-size: x-large"></i></td>
                 </tr>
                 </tbody>
 
