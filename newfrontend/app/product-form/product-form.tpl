@@ -41,8 +41,8 @@
     </div>
 
     <div class="panel-footer text-right">
-        <button type="submit" style="background-color: black" class="btn btn-xs btn-success">Submit</button>
-        <button type="reset" class="btn btn-xs btn-default" ng-click="vm.onReset()"><i class="fa fa-refresh" aria-hidden="true"></i>
+        <button type="submit" style="font-size: large" class="btn btn-xs btn-success"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Submit</button>
+        <button type="reset" style="font-size: large" class="btn btn-xs btn-default" ng-click="vm.onReset()"><i class="fa fa-refresh" aria-hidden="true"></i>
             Reset</button>
     </div>
 

@@ -3,7 +3,8 @@ body, html {
     height: 100%;
     margin: 0;
     font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+    /*color: #777;*/
+    color: black;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-9 {
@@ -27,7 +28,7 @@ body, html {
 
 .bgimg-3 {
     background-image: url("../app/Img/software_development.jpg");
-    min-height: 500px;
+    min-height: 450px;
 }
 
 .bgimg-4 {
@@ -52,6 +53,7 @@ body, html {
     width: 100%;
     text-align: center;
     color: #000;
+    font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 .caption1 {
@@ -62,6 +64,7 @@ body, html {
     width: 50%;
     text-align: center;
     color: #000;
+    font: 400 15px/1.8 "Lato", sans-serif;
 }
 
 .caption span.border {
@@ -70,6 +73,7 @@ body, html {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    font: 400 15px/1.8 "Lato", sans-serif;
 
 }
 
@@ -77,7 +81,17 @@ h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
-    color: #111;
+    color: white;
+
+}
+h4{
+    color: white;
+}
+h2{
+    color: black;
+}
+h1{
+    color: white;
 }
 .fa-check-circle:before {
     content: "\f058";
@@ -93,4 +107,16 @@ h3 {
 .fa-cart-plus:before {
     content: "\f217";
     color: gold;
+}
+.fa-pencil:before {
+    content: "\f040";
+    color: blue;
+}
+.fa-thumbs-up:before {
+    content: "\f087";
+    color: gold;
+}
+.fa-refresh:before {
+    content: "\f021";
+    color: blue;
 }
