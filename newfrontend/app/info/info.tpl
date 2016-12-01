@@ -31,7 +31,7 @@
                         <td>{{product.name}}</td>
                         <td>{{product.specifications}}</td>
                         <td>{{product.category}}</td>
-                        <td> <button  type="submit" ng-click="vm.onSubmit(product)" class="btn btn-xs "><i class="fa fa-cart-plus"></i></button> </td>
+                        <td> <button style="background-color:black" type="submit" ng-click="vm.onSubmit(product)" class="btn btn-xs btn-success" ng-disabled=""><i class="fa fa-cart-plus" style="font-size:24px"></i></button> </td>
                     </tr>
                 </tbody>
             </table>
