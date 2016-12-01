@@ -27,11 +27,11 @@ body, html {
 
 .bgimg-3 {
     background-image: url("../app/Img/software_development.jpg");
-    min-height: 400px;
+    min-height: 500px;
 }
     
 .bgimg-4 {
-    background-image: url("../app/Img/contact us.jpg");
+    background-image: url("../app/Img/phone-and-email-background.jpg");
         min-height: 550px;
 }
 .bgimg-5{
@@ -81,4 +81,5 @@ h3 {
 .fa-cart-plus:before {
     content: "\f217";
     color: gold;
+    background-color: black;
 }
