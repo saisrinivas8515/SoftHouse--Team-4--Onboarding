@@ -6,11 +6,6 @@ import team4.softhouse.process.InventoryProcess;
 import team4.softhouse.process.OrdersProcess;
 
 import javax.annotation.security.PermitAll;
-<<<<<<< Updated upstream
-=======
-import javax.annotation.security.RolesAllowed;
-import javax.validation.Valid;
->>>>>>> Stashed changes
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
@@ -47,7 +42,6 @@ public class OrdersResource {
    @POST
    public int OrderedProduct(Orders product) {return this.ordersProcess.create(product);}
 
-<<<<<<< Updated upstream
 /*    @DELETE
     @Path("/{id}")
     public void deleteOrder(@PathParam("id") Integer id) {
@@ -61,19 +55,6 @@ public class OrdersResource {
         if(data.getStatus()==1){
         this.inventoryProcess.updateQuantity(data.getProductid());
     }
-=======
-//    @DELETE
-//    @Path("/{id}")
-//    public void deleteOrder(@PathParam("id") Integer id) {
-//        this.ordersProcess.delete(id);
-//    }
-//
-    @PUT
-    @Path("/{orderid}")
-    public Orders updateNote(@PathParam("orderid") Integer orderid, @Valid Orders orders)throws javassist.NotFoundException{
-       return this.ordersProcess.update(orderid, orders);
-
->>>>>>> Stashed changes
     }
 }
 

@@ -37,10 +37,6 @@ public class Orders {
     @NotEmpty
     private String specifications;
 
-    @JsonProperty
-    @NotEmpty
-    private Integer status;
-
     public Orders (){}
 
     public Orders(Integer orderid, String name, Integer productid, Integer userid, Integer status, String username, String category, String specifications) {
@@ -52,7 +48,6 @@ public class Orders {
         this.category = category;
         this.specifications = specifications;
         this.status = status;
-<<<<<<< Updated upstream
     }
 
 
@@ -63,8 +58,6 @@ public class Orders {
 
     public void setStatus(Integer status) {
         this.status = status;
-=======
->>>>>>> Stashed changes
     }
 
     public String getUsername() {
@@ -121,12 +114,6 @@ public class Orders {
 
     public void setSpecifications(String specifications) {
         this.specifications = specifications;
-    }
-
-    public Integer getStatus(){return status;}
-
-    public void setStatus(Integer status) {
-        this.status = status;
     }
 }
 

@@ -68,7 +68,6 @@ function InfoController(manageService, $log) {
         window.alert("Order Placed")
     }
 
-<<<<<<< Updated upstream
 
     // return{responseError: function (res) {
     //     console.log(res);
@@ -79,6 +78,4 @@ function InfoController(manageService, $log) {
 
 
 
-=======
->>>>>>> Stashed changes
 }

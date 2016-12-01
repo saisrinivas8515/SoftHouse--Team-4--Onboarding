@@ -1,6 +1,7 @@
 package team4.softhouse.db.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotEmpty;
 
 
@@ -10,12 +11,12 @@ public class Inventory {
 
     @JsonProperty
     @NotEmpty
-//    @Length(max =0 , message = "must not be longer than 50 characters")
+    @Length(max =50 , message = "must not be longer than 50 characters")
     private String name;
 
     @JsonProperty
     @NotEmpty
-//    @Length(min = 1, message = "must contain atleast 1 characters")
+    @Length(min = 1, message = "must contain atleast 1 characters")
     private String category;
 
     @JsonProperty
