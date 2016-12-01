@@ -1,7 +1,4 @@
 <div class="container"></div>
-
-<html>
-
 <navigation class="row"></navigation>
 
 <body>
@@ -24,7 +21,6 @@
 </form>
 </body>
 
-</html>
 <!--
 <div class="container"></div>
 <navigation class="row"></navigation>
