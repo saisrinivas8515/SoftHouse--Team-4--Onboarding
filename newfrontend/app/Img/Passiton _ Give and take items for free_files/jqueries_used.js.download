@@ -1,0 +1,779 @@
+$(document).ready(function(){
+	$("#sign-l1").click(function()
+	{	
+		$("#sign-b2").slideUp();
+		$("#sign-b1").slideToggle();
+	});
+	$("#sign-l2").click(function()
+	{		
+		$("#sign-b1").slideUp();
+		$("#sign-b2").slideToggle();
+	});
+	$("#sign-l22").click(function()
+	{		
+		$("#sign-b1").slideUp();
+		$("#sign-b2").slideToggle();
+		jQuery('html,body').animate({ scrollTop: jQuery('.fullwrapper').offset().top}, 1000);
+
+	});
+	$("#edp-close").click(function()
+	{		
+		$("#sign-b2").slideUp();
+	});
+		
+});
+function ChkSignUp()
+{
+   var chkerr=0;
+   var inpfocus=0;
+   if(document.RegSign.name.value=="")
+   {
+   document.getElementById('err1').innerHTML='Enter Name, please';
+   document.RegSign.name.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.name.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err1').innerHTML='';
+   document.RegSign.name.className="";	
+   }   
+   
+   if(document.RegSign.email.value=="")
+   {
+   document.getElementById('err2').innerHTML='Enter Email, please';
+   document.RegSign.email.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.email.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.email.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err2').innerHTML='';
+   document.RegSign.email.className="";	
+   
+   if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.RegSign.email.value))
+   {
+   document.getElementById('err2').innerHTML='';
+   document.RegSign.email.className="";	
+   }
+   else
+   {
+   document.getElementById('err2').innerHTML='Invalid Email Address, please';
+   document.RegSign.email.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.email.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.email.focus();
+   chkerr=1;
+   }
+   }     
+			  
+
+	  
+   if(document.RegSign.phone.value=="")
+   {
+   document.getElementById('err3').innerHTML='Enter Phone Number, please';
+   document.RegSign.phone.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.phone.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err3').innerHTML='';
+   document.RegSign.phone.className="";	
+			if(/^[0-9]+$/.test(document.RegSign.phone.value))
+		   {
+			   document.getElementById('err3').innerHTML='';
+			   document.RegSign.phone.className="";	
+			   
+			   		   if(document.RegSign.phone.value.length=="10")
+					   {
+					   }
+					   else{
+						   document.getElementById('err3').innerHTML='Please enter a 10 digit moble number.';
+						   document.RegSign.phone.className = "alert";
+						   if(inpfocus==0)
+						   {
+								document.RegSign.phone.focus();
+								inpfocus=1;
+						   }
+						   //document.RegSign.email.focus();
+						   chkerr=1;
+					   }
+
+		   }
+		   else
+		   {
+			   document.getElementById('err3').innerHTML='Invalid phone number! Please re-enter.';
+			   document.RegSign.phone.className = "alert";
+			   if(inpfocus==0)
+			   {
+					document.RegSign.phone.focus();
+					inpfocus=1;
+			   }
+			   //document.RegSign.email.focus();
+			   chkerr=1;
+		   }
+		   
+   }   
+	 
+   if(document.RegSign.city.value=="")
+   {
+   document.getElementById('err4').innerHTML='Select Your City, please';
+   document.RegSign.city.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.city.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err4').innerHTML='';
+   document.RegSign.city.className="";	
+   }   
+   
+   if(document.RegSign.state.value=="")
+   {
+   document.getElementById('err5').innerHTML='Select Your State, please';
+   document.RegSign.state.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.state.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err5').innerHTML='';
+   document.RegSign.state.className="";	
+   }   
+	  
+	  
+	  
+	  
+   if(document.RegSign.password.value=="")
+   {
+   document.getElementById('err6').innerHTML='Enter password, please';
+   document.RegSign.password.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.password.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.password.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err6').innerHTML='';
+   document.RegSign.password.className="";	
+   
+   }
+   
+   if(document.RegSign.cpassword.value=="")
+   {
+   document.getElementById('err7').innerHTML='Confirm password, please!';
+   document.RegSign.cpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.cpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.cpassword.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err7').innerHTML='';
+   document.RegSign.cpassword.className="";	
+   
+   if(document.RegSign.cpassword.value != document.RegSign.password.value)
+   {
+   document.getElementById('err7').innerHTML='Password entered do not match, please!';
+   document.RegSign.cpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign.cpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.cpassword.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('err7').innerHTML='';
+   document.RegSign.cpassword.className="";	
+   }
+   
+   }
+
+   if(chkerr==0)
+   {
+	   	return true;
+   }
+   else
+   {
+	   return false; 
+   }
+}
+
+function ChkLogin()
+{
+   var chkerr=0;
+   var inpfocus=0;
+   
+   if(document.RegLogin.lemail.value=="")
+   {
+   document.getElementById('lerr1').innerHTML='Enter Email, please';
+   document.RegLogin.lemail.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin.lemail.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.email.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('lerr1').innerHTML='';
+   document.RegLogin.lemail.className="";	
+   
+   if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.RegLogin.lemail.value))
+   {
+   document.getElementById('lerr1').innerHTML='';
+   document.RegLogin.lemail.className="";	
+   }
+   else
+   {
+   document.getElementById('lerr1').innerHTML='Invalid Email Address, please';
+   document.RegLogin.lemail.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin.lemail.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.email.focus();
+   chkerr=1;
+   }
+   }  
+      
+   if(document.RegLogin.lpassword.value=="")
+   {
+   document.getElementById('lerr2').innerHTML='Enter password, please';
+   document.RegLogin.lpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin.lpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.password.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('lerr2').innerHTML='';
+   document.RegLogin.lpassword.className="";	
+   }
+   
+
+   if(chkerr==0)
+   {
+	   	return true;
+   }
+   else
+   {
+	   return false; 
+   }
+}
+//Validation1
+
+function ChkSignUp1()
+{
+   var chkerr=0;
+   var inpfocus=0;
+   if(document.RegSign1.name.value=="")
+   {
+   document.getElementById('serr1').innerHTML='Enter Name, please';
+   document.RegSign1.name.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.name.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr1').innerHTML='';
+   document.RegSign1.name.className="";	
+   }   
+   
+   if(document.RegSign1.email.value=="")
+   {
+   document.getElementById('serr2').innerHTML='Enter Email, please';
+   document.RegSign1.email.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.email.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.email.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr2').innerHTML='';
+   document.RegSign1.email.className="";	
+   
+   if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.RegSign1.email.value))
+   {
+   document.getElementById('serr2').innerHTML='';
+   document.RegSign1.email.className="";	
+   }
+   else
+   {
+   document.getElementById('serr2').innerHTML='Invalid Email Address, please';
+   document.RegSign1.email.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.email.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.email.focus();
+   chkerr=1;
+   }
+   }     
+			  
+
+	  
+   if(document.RegSign1.phone.value=="")
+   {
+   document.getElementById('serr3').innerHTML='Enter Phone Number, please';
+   document.RegSign1.phone.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.phone.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr3').innerHTML='';
+   document.RegSign1.phone.className="";	
+			if(/^[0-9]+$/.test(document.RegSign1.phone.value))
+		   {
+			   document.getElementById('serr3').innerHTML='';
+			   document.RegSign1.phone.className="";	
+			   
+			   		   if(document.RegSign1.phone.value.length=="10")
+					   {
+					   }
+					   else{
+						   document.getElementById('serr3').innerHTML='Please enter a 10 digit moble number.';
+						   document.RegSign1.phone.className = "alert";
+						   if(inpfocus==0)
+						   {
+								document.RegSign1.phone.focus();
+								inpfocus=1;
+						   }
+						   //document.RegSign.email.focus();
+						   chkerr=1;
+					   }
+
+		   }
+		   else
+		   {
+			   document.getElementById('serr3').innerHTML='Invalid phone number! Please re-enter.';
+			   document.RegSign1.phone.className = "alert";
+			   if(inpfocus==0)
+			   {
+					document.RegSign1.phone.focus();
+					inpfocus=1;
+			   }
+			   //document.RegSign.email.focus();
+			   chkerr=1;
+		   }
+		   
+   }   
+	 
+   if(document.RegSign1.city.value=="")
+   {
+   document.getElementById('serr4').innerHTML='Select Your City, please';
+   document.RegSign1.city.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.city.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr4').innerHTML='';
+   document.RegSign1.city.className="";	
+   }   
+   
+   if(document.RegSign1.state.value=="")
+   {
+   document.getElementById('serr5').innerHTML='Select Your State, please';
+   document.RegSign1.state.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.state.focus();
+		inpfocus=1;
+   }	
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr5').innerHTML='';
+   document.RegSign1.state.className="";	
+   }   
+	  
+	  
+	  
+	  
+   if(document.RegSign1.password.value=="")
+   {
+   document.getElementById('serr6').innerHTML='Enter password, please';
+   document.RegSign1.password.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.password.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.password.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr6').innerHTML='';
+   document.RegSign1.password.className="";	
+   
+   }
+   
+   if(document.RegSign1.cpassword.value=="")
+   {
+   document.getElementById('serr7').innerHTML='Confirm password, please!';
+   document.RegSign1.cpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.cpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.cpassword.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr7').innerHTML='';
+   document.RegSign1.cpassword.className="";	
+   
+   if(document.RegSign1.cpassword.value != document.RegSign1.password.value)
+   {
+   document.getElementById('serr7').innerHTML='Password entered do not match, please!';
+   document.RegSign1.cpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegSign1.cpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegSign.cpassword.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('serr7').innerHTML='';
+   document.RegSign1.cpassword.className="";	
+   }
+   
+   }
+
+   if(chkerr==0)
+   {
+	   	return true;
+   }
+   else
+   {
+	   return false; 
+   }
+}
+
+function ChkLogin1()
+{
+   var chkerr=0;
+   var inpfocus=0;
+   
+   if(document.RegLogin1.lemail.value=="")
+   {
+   document.getElementById('1lerr1').innerHTML='Enter Email, please';
+   document.RegLogin1.lemail.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin1.lemail.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.email.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('1lerr1').innerHTML='';
+   document.RegLogin1.lemail.className="";	
+   
+   if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.RegLogin1.lemail.value))
+   {
+   document.getElementById('1lerr1').innerHTML='';
+   document.RegLogin1.lemail.className="";	
+   }
+   else
+   {
+   document.getElementById('1lerr1').innerHTML='Invalid Email Address, please';
+   document.RegLogin1.lemail.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin1.lemail.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.email.focus();
+   chkerr=1;
+   }
+   }  
+      
+   if(document.RegLogin1.lpassword.value=="")
+   {
+   document.getElementById('l1err2').innerHTML='Enter password, please';
+   document.RegLogin1.lpassword.className = "alert";
+   if(inpfocus==0)
+   {
+   		document.RegLogin1.lpassword.focus();
+		inpfocus=1;
+   }
+   //document.RegLogin.password.focus();
+   chkerr=1;
+   }
+   else
+   {
+   document.getElementById('1lerr2').innerHTML='';
+   document.RegLogin1.lpassword.className="";	
+   }
+   
+
+   if(chkerr==0)
+   {
+	   	return true;
+   }
+   else
+   {
+	   return false; 
+   }
+}
+
+
+
+//Validarion 1 end
+   function previewFile(){
+       var preview = document.querySelector('.img'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+
+
+       }
+	   
+		document.getElementById('pic').style.visibility='hidden';
+
+  }
+
+  previewFile();  //calls the function named previewFile()
+     function previewFile1(){
+	          var preview = document.querySelector('.img1'); //selects the query named img
+       var file    = document.querySelector('#pic1').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+		document.getElementById('pic1').style.visibility='hidden';
+   }
+  previewFile1();  //calls the function named previewFile()
+
+     function previewFile2(){
+	          var preview = document.querySelector('.img2'); //selects the query named img
+       var file    = document.querySelector('#pic2').files[0]; //sames as here
+       var reader  = new FileReader();
+
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
+
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+       } else {
+           preview.src = "";
+       }
+		document.getElementById('pic2').style.visibility='hidden';
+   }
+  previewFile2();  //calls the function named previewFile()
+
+
+
+
+	function getstores1()
+
+{
+
+  //alert('asd');
+
+  //$('html, body').animate({scrollTop:$('.st2').position().top}, 'slow');
+
+  jQuery('html,body').animate({ scrollTop: jQuery('.ban-below').offset().top}, 1000);
+
+  var xmlhttp;    
+
+  if (window.XMLHttpRequest)
+
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+
+  	xmlhttp=new XMLHttpRequest();
+
+  }
+
+  else
+
+  {// code for IE6, IE5
+
+  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+  }
+
+	xmlhttp.onreadystatechange=function()
+
+  	{
+
+  	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+
+    {
+
+    	document.getElementById("listStores").innerHTML=xmlhttp.responseText;
+
+    }
+
+	else
+
+	{
+
+		document.getElementById("listStores").innerHTML='<p align="center"><img src="images/loading2.gif" width="250" height="250"></p><p align="center" style="font-size:25px; margin-top:30px;">Loading Jobs</p>';
+
+	}
+
+  }
+
+var qwe11="getdetails.php?location="+document.getElementById('location').value+"&category="+document.getElementById('category').value+"&cat="+document.getElementById('cat').value;
+
+xmlhttp.open("GET",qwe11,true);
+
+xmlhttp.send();
+
+}
+
+
+	
+	
+
+function getstores()
+
+{
+
+  //alert('asd');
+
+  //$('html, body').animate({scrollTop:$('.st2').position().top}, 'slow');
+
+  jQuery('html,body').animate({ scrollTop: jQuery('.ban-below').offset().top}, 1000);
+
+  var xmlhttp;    
+
+  if (window.XMLHttpRequest)
+
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+
+  	xmlhttp=new XMLHttpRequest();
+
+  }
+
+  else
+
+  {// code for IE6, IE5
+
+  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+
+  }
+
+	xmlhttp.onreadystatechange=function()
+
+  	{
+
+  	if (xmlhttp.readyState==4 && xmlhttp.status==200)
+
+    {
+
+    	document.getElementById("listStores").innerHTML=xmlhttp.responseText;
+
+    }
+
+	else
+
+	{
+
+		document.getElementById("listStores").innerHTML='<p align="center"><img src="images/loading2.gif" width="250" height="250"></p><p align="center" style="font-size:25px; margin-top:30px;">Loading Jobs</p>';
+
+	}
+
+  }
+
+var qwe11="getdetails.php?location="+document.getElementById('location').value+"&category="+document.getElementById('category').value+"&cat="+document.getElementById('cat').value;
+
+xmlhttp.open("GET",qwe11,true);
+
+xmlhttp.send();
+
+}
+
+
+
+
+

@@ -1,0 +1,274 @@
+.sign-main
+{
+	width: 15%;
+	padding: 10px 15px;
+	border-radius: 3px;
+	background: #767676 none repeat scroll 0% 0%;
+	position: absolute;
+	top: 69px;
+	right: 87px;
+	z-index: 100;
+	color: #FFF;
+	text-align: left;
+}
+.sign-main1
+{
+	width: 15%;
+	padding: 10px 15px;
+	border-radius: 3px;
+	background: #767676 none repeat scroll 0% 0%;
+	position: absolute;
+	top: 69px;
+	right: 188px;
+	z-index: 100;
+	color: #FFF;
+	text-align: left;
+}
+
+.sign-main .sc-close
+{
+	position:absolute;
+	right:5px; top:5px;
+	cursor:pointer;
+}
+.sign-main a
+{
+	color:#fff; text-decoration:none;
+}
+.sign-main a:hover
+{
+	text-decoration:underline;
+}
+.sign-main ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	display:block;
+	width:200px;
+}
+.sign-main ul li
+{
+	clear: both;
+	width: 100%;
+	margin: 5px 0px !important;
+	padding: 0px !important;
+	background: none !important;
+	text-align: left !important;
+}
+.sign-main ul li input
+{
+	width: 92%;
+	font-size: 13px;
+	line-height: 15px;
+	border-radius: 3px;
+	border: 1px solid #e1e1e1;
+	padding: 2% 3%;
+	height: 20px;
+	font-family: "Open Sans",sans-serif;
+	color: #5F5E5E;
+}
+.sign-main ul li select
+{
+	width: 98%;
+	font-size: 13px;
+	line-height: 15px;
+	border-radius: 3px;
+	border: 1px solid #E1E1E1;
+	padding: 2% 3%;
+	height: 29px;
+	font-family: "Open Sans",sans-serif;
+	color: #5F5E5E;
+		cursor:pointer;
+}
+.sign-main ul li select option
+{
+	padding:2% 1% 2% 4%;
+	cursor:pointer;
+}
+.sign-main ul li input.alert
+{
+	background: #EF7C43 none repeat scroll 0% 0%;
+	color: #fff;
+}
+.sign-main ul li select.alert
+{
+	background: #EF7C43 none repeat scroll 0% 0%;
+	color: #fff;
+}
+
+.sign-main ul li err-txt
+{
+	color:#FFF45C;
+}
+.sign-main ul li input.subm
+{
+	width: 38%;
+	cursor: pointer;
+	background: #AAB42F none repeat scroll 0% 0%;
+	border: 0px none;
+	box-shadow: 0px 0px 0px #666 inset;
+	color: #FFF;
+	float: right;
+	height: 30px;
+	margin-top: 3%;
+}
+#sign-b1,#sign-b2
+{
+	display:none;
+}
+.alert
+{
+	border-color:#FF0000;
+}
+.err-txt
+{
+	display:block; width:100%; text-align:right; margin-top:2px; font-size:12px; line-height:11px; 
+}
+.err-txt2
+{
+	display:block; width:100%; text-align:right; margin-top:2px; font-size:13px; line-height:11px; color:#FF0000;
+}
+
+
+
+
+
+
+
+@media(min-width:768px) and (max-width:1024px){
+	
+	
+.sign-main {
+    background: #767676 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 15px;
+    position: absolute;
+    right: 57px;
+    text-align: left;
+    top: 117px;
+    width: 25%;
+    z-index: 100;
+}
+
+.sign-main1 {
+    background: #767676 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    right: 154px;
+    text-align: left;
+    top: 118px;
+    width: 25%;
+    z-index: 100;
+}
+
+.sign-main .sc-close
+{
+	position:absolute;
+	right:5px; top:5px;
+	cursor:pointer;
+}
+.sign-main a
+{
+	color:#fff; text-decoration:none;
+}
+.sign-main a:hover
+{
+	text-decoration:underline;
+}
+.sign-main ul
+{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	display:block;
+	width:200px;
+}
+.sign-main ul li
+{
+	clear: both;
+	width: 100%;
+	margin: 5px 0px !important;
+	padding: 0px !important;
+	background: none !important;
+	text-align: left !important;
+}
+.sign-main ul li input
+{
+	width: 92%;
+	font-size: 13px;
+	line-height: 15px;
+	border-radius: 3px;
+	border: 1px solid #e1e1e1;
+	padding: 2% 3%;
+	height: 20px;
+	font-family: "Open Sans",sans-serif;
+	color: #5F5E5E;
+}
+.sign-main ul li select
+{
+	width: 98%;
+	font-size: 13px;
+	line-height: 15px;
+	border-radius: 3px;
+	border: 1px solid #E1E1E1;
+	padding: 2% 3%;
+	height: 29px;
+	font-family: "Open Sans",sans-serif;
+	color: #5F5E5E;
+		cursor:pointer;
+}
+.sign-main ul li select option
+{
+	padding:2% 1% 2% 4%;
+	cursor:pointer;
+}
+.sign-main ul li input.alert
+{
+	background: #EF7C43 none repeat scroll 0% 0%;
+	color: #fff;
+}
+.sign-main ul li select.alert
+{
+	background: #EF7C43 none repeat scroll 0% 0%;
+	color: #fff;
+}
+
+.sign-main ul li err-txt
+{
+	color:#FFF45C;
+}
+.sign-main ul li input.subm
+{
+	width: 38%;
+	cursor: pointer;
+	background: #AAB42F none repeat scroll 0% 0%;
+	border: 0px none;
+	box-shadow: 0px 0px 0px #666 inset;
+	color: #FFF;
+	float: right;
+	height: 30px;
+	margin-top: 3%;
+}
+#sign-b1,#sign-b2
+{
+	display:none;
+}
+.alert
+{
+	border-color:#FF0000;
+}
+.err-txt
+{
+	display:block; width:100%; text-align:right; margin-top:2px; font-size:12px; line-height:11px; 
+}
+.err-txt2
+{
+	display:block; width:100%; text-align:right; margin-top:2px; font-size:13px; line-height:11px; color:#FF0000;
+}
+	
+	
+}
