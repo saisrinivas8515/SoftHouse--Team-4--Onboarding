@@ -1,7 +1,7 @@
 <div class="container">
     <navigation class="row"></navigation>
 
-    <div class="row">
+    <div class="row" >
         <div class="col-xs-3">
             <select class="form-control" id="mySelect" ng-change="vm.addFilter(selectedCat)" ng-model="selectedCat">
                 <option value="" selected>Category</option>

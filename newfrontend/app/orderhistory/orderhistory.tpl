@@ -1,8 +1,8 @@
 <div class="container">
 
-    <navigation class="row"></navigation>
+    <navigation class="row" ></navigation>
 
-    <div class="row">
+    <div class="row" >
         <h2 class="text-center">Order History</h2>
         <div class="col-xs-12">
             <table class="table">

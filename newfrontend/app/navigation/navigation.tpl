@@ -8,7 +8,7 @@
       <li><a  href="#/viewproducts"ng-if="(vm.hasCookies())"><b>Products</b></a></li>
       <li><a href="#/manage" ng-if="(vm.hasCookies() && vm.role == 'Admin')"><b>Manage Products</b></a></li>
       <li><a href="#/manageorders" ng-if="(vm.hasCookies() && vm.role == 'Admin')"><b>Manage Orders</b></a></li>
-      <li><a href="#/processedorders" ng-if="(vm.hasCookies() && vm.role=='Admin')"><b>Orders Log</b></a></li>
+      <li><a href="#/processedorders" ng-if="(vm.hasCookies() && vm.role=='Admin')"><b>Processed Orders</b></a></li>
       <li><a href="#/orderhistory" ng-if="(vm.hasCookies() && vm.role=='Employee')"><b>Cart</b></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">

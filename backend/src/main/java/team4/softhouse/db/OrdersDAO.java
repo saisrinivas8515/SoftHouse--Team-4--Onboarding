@@ -6,6 +6,8 @@ import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapperFactory;
 import org.skife.jdbi.v2.tweak.BeanMapperFactory;
 import team4.softhouse.db.entity.Orders;
 
+import javax.ws.rs.BadRequestException;
+import java.sql.SQLDataException;
 import java.util.List;
 
 @RegisterMapperFactory(BeanMapperFactory.class)

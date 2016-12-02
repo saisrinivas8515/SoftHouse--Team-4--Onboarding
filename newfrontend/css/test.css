@@ -99,7 +99,12 @@ h1{
 }
 .fa-times:before {
     content: "\f05c";
-    color: red;}
+    color: red;
+}
+.fa-remove:before {
+    content: "\f05c";
+    color: snow;
+}
 .fa-spinner:before {
     content: "\f110";
     color: black;
@@ -110,13 +115,13 @@ h1{
 }
 .fa-pencil:before {
     content: "\f040";
-    color: blue;
+    color: snow;
 }
 .fa-thumbs-up:before {
     content: "\f087";
-    color: gold;
+    color: snow;
 }
 .fa-refresh:before {
     content: "\f021";
-    color: blue;
+    color: snow;
 }

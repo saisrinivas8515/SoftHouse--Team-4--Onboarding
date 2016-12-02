@@ -1,4 +1,4 @@
-function loginInterceptor($location) {
+function loginInterceptor($location,$q) {
 
     return {
         request: function (config) {

@@ -2,8 +2,8 @@
 
     <navigation class="row"></navigation>
 
-    <div class="row">
-        <h2 class="text-center">Orders Log</h2>
+    <div class="row" >
+        <h2 class="text-center">Processed Orders</h2>
         <div class="col-xs-12">
             <table class="table">
                 <thead>

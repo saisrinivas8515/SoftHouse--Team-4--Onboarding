@@ -5,10 +5,11 @@
             <!--<span class="border" style="alignment: top">ORDERS PLACED</span>-->
         <!--</div>-->
 
+<div class="container">
     <navigation class="row"></navigation>
 
     <form>
-        <div class="row" style="font-size: large">
+        <div class="row">
             <div style="color: black"></div>
             <h1 class="text-center">Orders Placed</h1>
             <div class="col-xs-12">
@@ -33,7 +34,7 @@
                         <td>{{order.specifications}}</td>
                         <td>{{order.category}}</td>
                         <td> <button type="submit" class="btn btn-xs btn-success" ng-click="vm.acceptOrder(order.orderid,order.productid)"><i class="fa fa-check" aria-hidden="true"></i> Accept Order</button> </td>
-                        <td> <button type="submit" class="btn btn-xs btn-danger" ng-click="vm.rejectOrder(order.orderid,order.productid)"><i class="fa fa-times" aria-hidden="true"></i> Reject Order</button> </td>
+                        <td> <button type="submit" class="btn btn-xs btn-danger" ng-click="vm.rejectOrder(order.orderid,order.productid)"><i class="fa fa-remove" aria-hidden="true"></i> Reject Order</button> </td>
                     </tr>
                     </tbody>
 
@@ -41,3 +42,4 @@
             </div>
         </div>
     </form>
+    </div>
